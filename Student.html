@@ -1,0 +1,243 @@
+
+<?php
+   //ob_start();
+   session_start();
+?>
+<!DOCTYPE>
+<html lang="en-US">
+  <meta charset="UTF-8">
+<head>
+ <title>إعاقتي بداية نجاحي</title>
+  <link href="csStu.css" rel="stylesheet">
+  <link href="Student.css?version=1" rel="stylesheet">
+  <script type="text/javascript" src="Student.js"></script>
+
+</head>
+<body>
+
+<div class="top">
+<ul>
+   <li class="hh"><a href="StudentAr.php">عربي</a></li>
+  <li class="hh"><a href="contact.php">Contact</a></li>
+  <li class="hh"><a href="Teacher.php">Teacher</a></li>
+   <li class="hh"><a href="oman.php">Main</a></li>
+  <li class="h"><a href="#about"><img src="imgs/br.png" height="70" width="450"></a></li>
+</ul>
+</div>
+
+<br>
+<center id="formLog">
+<div class="containers" id="container">
+	<div class="form-container sign-up-container">
+		<form role = "form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
+            ?>" method = "post">
+			
+			
+			
+			  
+			<input type="text" placeholder="Name" name="fullname" required />
+			<input type="text" placeholder="Email"  name="remail" required />
+			<input type="password" placeholder="Password" name="rpassword" required />
+			
+			<div class="tryy">
+			<label class="labeloption">Age</label>
+			<select name="age" class="options" >
+    <option value="3-5">3-5 years</option>
+    <option value="6-15">6-15 years</option>
+	
+  </select>
+  	</div>
+			
+			<div class="tryy">
+			<label class="labeloption">Gender</label>
+			<select name="genderOption" class="options" >
+    <option value="Female">Female</option>
+    <option value="Male">Male</option>
+	
+  </select>
+  	</div>
+	<div class="tryy">
+	<label class="labeloption">Category</label>
+   <select name="categoryOption" class="options">
+    <option value="downSyndrome">Down Syndrome</option>
+    <option value="category">deaf</option>
+  </select>
+	</div>
+			
+  
+  
+			<button type="submit" name="signup">Sign Up</button>
+		</form>
+	</div>
+	<div class="form-container sign-in-container">
+		<form role = "form" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
+            ?>" method = "post">
+		
+		
+			
+			
+			<h1>Sign in</h1>
+			<?php
+			 //require_once 'DbConnect.php';
+				
+
+         
+			
+			
+            
+			
+			if (isset($_POST['signup']) && !empty($_POST['remail']) 
+               && !empty($_POST['rpassword'])) {
+				  
+				  
+				   $rpassword=$_POST['rpassword']; 
+				    $remail=$_POST['remail'];  
+    $age=$_POST['age'];  
+	$gender=$_POST['genderOption'];
+	$category=$_POST['categoryOption'];
+	$rname=$_POST['fullname'];
+
+//checking if the user is already exist with this fullname or mobile
+					//as the mobile and fullname should be unique for every user 
+		//			$stmt = $conn->prepare("SELECT id FROM student WHERE email = ? OR mobile = ?");
+			$stmt = $conn->prepare("SELECT id FROM student WHERE email = ?");
+					$stmt->bind_param("s", $remail);
+					$stmt->execute();
+					$stmt->store_result();
+					
+					//if the user already exist in the database 
+					if($stmt->num_rows > 0){
+						//$response['error'] = true;
+					//	$response['message'] = 'User already registered';
+					 echo 'Sorry the email is registered already ';
+						$stmt->close();
+					}else{
+						 
+						//if user is new creating an insert query 
+						$stmt = $conn->prepare("INSERT INTO student (fullname, email, pass,age, category,gender) VALUES (?, ?, ?, ? ,?,?)");
+						$stmt->bind_param("ssssss", $rname, $remail, $rpassword, $age, $category, $gender);
+						
+						//if the user is successfully added to the database 
+						if($stmt->execute()){
+						$stmt->close();
+							
+							//adding the user data in response 
+							//$response['error'] = false; 
+						//	$response['message'] = 'User registered successfully'; 
+							//$response['user'] = $user; 
+							 echo 'Thank you , You can Sign in Now ';
+						}
+  
+   
+				   
+				   
+				   
+				   
+				
+              // if ($_POST['email2'] == 'student' && 
+             //     $_POST['password2'] == '1234') {
+             //     $_SESSION['valid'] = true;
+             //     $_SESSION['timeout'] = time();
+             //     $_SESSION['email2'] = 'student';
+                  
+            //      echo 'nice';
+           //    }else {
+			//	    echo 'Wrong ';
+                 
+           //    }
+			   }}
+			
+         ?>
+			
+			
+			 <?php
+           
+            
+           
+			
+			if (isset($_POST['login']) && !empty($_POST['email']) 
+               && !empty($_POST['password'])) {
+				  
+				  
+				   $email=$_POST['email']; 
+				    $password=$_POST['password'];  
+   
+
+//checking if the user is already exist with this fullname or mobile
+					//as the mobile and fullname should be unique for every user 
+		//			$stmt = $conn->prepare("SELECT id FROM student WHERE email = ? OR mobile = ?");
+			$stmt = $conn->prepare("SELECT fullname FROM student WHERE email = ? AND pass = ?" );
+					$stmt->bind_param("ss", $email, $password);
+					$stmt->execute();
+					$stmt->store_result();
+					$stmt->bind_result($fullNamee);
+							$stmt->fetch();
+					
+					
+				
+					
+					//if the user already exist in the database 
+					if($stmt->num_rows > 0){
+						
+					
+					
+					$_SESSION['Student'] =  $fullNamee;
+					 echo 'Thank you , You will be redirected student page ';
+					  header('Refresh: 2; URL = oman.php');
+						$stmt->close();
+					}else{
+						 
+						 echo 'Sorry the email or password is wrong  ';
+  
+   
+				   
+				   
+				   
+				   
+				
+              // if ($_POST['email2'] == 'student' && 
+             //     $_POST['password2'] == '1234') {
+             //     $_SESSION['valid'] = true;
+             //     $_SESSION['timeout'] = time();
+             //     $_SESSION['email2'] = 'student';
+                  
+            //      echo 'nice';
+           //    }else {
+			//	    echo 'Wrong ';
+                 
+           //    }
+			   }}
+			
+			
+			
+         ?>
+			
+			<input type="text" placeholder="Email" name="email" required />
+			<input type="password" placeholder="Password" name="password" required />
+			
+			<button type="submit" onclick="hh()" name="login">Sign In</button>
+		</form>
+	</div>
+	<div class="overlay-container">
+		<div class="overlay" id="ttt">
+			<div class="overlay-panel overlay-left">
+			
+				<button class="ghost" id="signIn">Sign In</button>
+			</div>
+			<div class="overlay-panel overlay-right">
+			
+				<button class="ghost" id="signUp">Sign Up</button>
+			</div>
+		</div>
+	</div>
+</div>
+</center>
+
+
+
+<div class="footer">
+</div>
+
+
+</body>
+</html>
