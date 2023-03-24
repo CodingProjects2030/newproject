@@ -15,7 +15,7 @@ span {
 button {
 	border-radius: 20px;
 	border: 1px solid #FF4B2B;
-	background-color: #FF4B2B;
+	background-color: #3460e3;;
 	color: #FFFFFF;
 	font-size: 12px;
 	font-weight: bold;
@@ -34,8 +34,9 @@ button:focus {
 }
 
 button.ghost {
-	background-color: transparent;
-	border-color: #FFFFFF;
+background-color: #3460e3;
+    border-color: #FFFFFF;
+    font-size: 27px;
 }
 
 form {
@@ -49,12 +50,15 @@ form {
 	text-align: center;
 }
 
-input {
-	background-color: #eee;
-	border: none;
-	padding: 12px 15px;
-	margin: 8px 0;
-	width: 100%;
+input {font-size: 20px;
+    
+	
+	    background-color: #f2f5ff;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    color: #3460e3;
 }
 
 .containers {
@@ -66,7 +70,7 @@ input {
 	overflow: hidden;
 	width: 768px;
 	max-width: 100%;
-	min-height: 480px;
+	min-height: 640px;
 }
 
 .form-container {
@@ -175,7 +179,7 @@ input {
 	transform: translateX(0);
 }
 
-#ttt{ background-image: url('imgs/index/1.png');
+#ttt{ background-image: url('imgs/br.png');
   background-repeat: no-repeat;}
 .containers.right-panel-active .overlay-right {
 	transform: translateX(20%);
@@ -214,11 +218,13 @@ margin-left: -217px;
 #dd{width: 183px;
 display: inline-table;}
 
-.options{    font-size: 17px;
+.options{   font-size: 20px;
     display: inherit;
-	margin-bottom: 16px;
-	margin-left:10px;
-	    height: 21px;}
+    margin-bottom: 16px;
+    margin-left: 10px;
+    height: 21px;
+    width: 43%;
+    margin-right: 11px;}
 
 .tryy{width:100%;
     DISPLAY: flex;
@@ -230,5 +236,5 @@ display: inline-table;}
 
 .arrtol{margin-right: 12px;}
 
-#techerlogSign{ background-image: url('imgs/teacher.png');
+#techerlogSign{ background-image: url('pic1.png');
   background-repeat: no-repeat;}
