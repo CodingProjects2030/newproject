@@ -1,0 +1,87 @@
+<!DOCTYPE>
+<html lang="en-US">
+  <meta charset="UTF-8">
+<head>
+ <title>إعاقتي بداية نجاحي</title>
+  <link href="csStu.css" rel="stylesheet">
+  <link href="Student.css?session=6" rel="stylesheet">
+   <link href="cs.css?=version=5" rel="stylesheet">
+  <script type="text/javascript" src="Student.js"></script>
+
+</head>
+<body>
+
+<div class="top">
+<ul>
+   
+    <li class="h"><a href="#about"><img src="imgs/br.png" height="70" width="450"></a></li>
+  <li class="hh"><a href="indexen.html">English</a></li>
+  <li class="hh"><a href="contactar.html">ولي الامر</a></li>
+  
+    <li class="hh"><a href="contactar.php">الخدمات الصحية</a></li>
+ <li class="hh"><a href="login.html">الخدمات التعليمية</a></li>
+<li class="hh"><a href="TeacherAr.html">الخدمات الترفيهية</a></li>
+
+  
+	
+  
+</ul>
+</div>
+
+<br>
+<center id="formLog">
+<div class="containers" id="container">
+	
+	
+	
+		<form role = "form"  id="arra" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
+            ?>" method = "post">
+			
+				<h1>تحديث البيانات</h1>
+			
+			  
+			<input type="text" placeholder="الاسم الكامل" name="fullname" required />
+			<input type="text" placeholder="البريد الالكتروني"  name="remail" required />
+			<input type="password" placeholder="كلمة المرور" name="rpassword" required />
+			<input type="password" placeholder="اعادة كلمة المرور" name="rpassword2" required />
+			<input type="text" placeholder="العمر" name="rpassword" required />
+			<input type="text" placeholder="الوزن" name="rpassword" required />
+			<input type="text" placeholder="الطول" name="rpassword" required />
+			
+			
+			
+			<div class="tryy">
+			<label class="labeloption">الجنس</label>
+			<select style="height: 27px;" name="genderOption" class="options" class="arrtol">
+    <option  value="Female">انثى</option>
+    <option value="Male">ذكر</option>
+	
+  </select>
+  	</div>
+	<div class="tryy">
+	<label class="labeloption">الاعاقة</label>
+   <select style="height: 27px;" name="categoryOption" class="options"  class="arrtol">
+    <option value="downSyndrome">سمعية</option>
+    <option value="deaf">بصرية</option>
+	  <option value="deaf">حركية</option>
+  </select>
+	</div>
+			
+  
+  
+			<button type="submit" name="signup">تحديث</button>
+		</form>
+	
+	
+	
+</div>
+</center>
+
+
+
+<div class="footer">
+</div>
+
+
+</body>
+</html>
