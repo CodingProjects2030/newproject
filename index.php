@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
 <head>
  <title>تقنيات ووسائل لدعم أصحاب الهمم العاليه</title>
- <link href="cs.css?=version=3" rel="stylesheet">
+ <link href="cs.css?=version=5" rel="stylesheet">
 
 
 </head>
@@ -15,7 +15,7 @@
 <div class="top">
 <ul>
  
-  <li class="h"><a href="#about"><img src="imgs/br.png" height="70" width="450"></a></li>
+  <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
   <li class="hh"><a href="indexen.html">English</a></li>
     <?php
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
@@ -41,7 +41,7 @@ else
 
 </ul>
 </div>
-<img class="centerMain" src="pic1.png" alt="" width="500px">
+<img class="centerMain" src="pic1.png" alt="" width="500px" style="margin-top: 151px;">
 
 <br>
 <div id="container">
@@ -53,7 +53,11 @@ else
 </div>
 <br>
 
-<div class="wrap1">
+<div class="wrap1" style="float: left;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;">
   <button class="button"onclick="window.location.href='login.php'" >المستخدمين</button>
 </div>
 <div class="wrap2">
