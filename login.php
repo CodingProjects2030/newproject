@@ -17,7 +17,7 @@
 <div class="top">
 <ul>
    
-    <li class="h"><a href="#about"><img src="imgs/br.png" height="70" width="450"></a></li>
+     <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
   <li class="hh"><a href="indexen.html">English</a></li>
   <li class="hh"><a href="contactar.html">ولي الامر</a></li>
   
@@ -33,7 +33,7 @@
 
 <br>
 <center id="formLog">
-<div class="containers" id="container">
+<div class="containers" id="container" style="margin-top: 15px;">
 	<div class="form-container sign-up-container">
 		<form role = "form"  id="arra" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
             ?>" method = "post">

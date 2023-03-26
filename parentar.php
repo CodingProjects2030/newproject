@@ -25,7 +25,7 @@ p {color:red;}
 <div class="top">
 <ul>
  
-  <li class="h"><a href="#about"><img src="imgs/br.png" height="70" width="450"></a></li>
+  <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
   <li class="hh"><a href="indexen.html">English</a></li>
     <?php
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
@@ -53,7 +53,7 @@ else
 </ul>
 </div>
 
-<div id="container" style="margin-top:100px;height:auto;">
+<div id="container" style="margin-top:100px;height:auto;margin-top: 15px;">
   
   <div id="container2" style="height:auto;text-align:right;    background-color: #d4e8d5;">
   <form action="/action_page.php">
