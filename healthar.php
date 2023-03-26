@@ -44,7 +44,7 @@ tr:nth-child(even) {
 <div class="top">
 <ul>
    
-  <li class="h"><a href="#about"><img src="imgs/br.png" height="70" width="450"></a></li>
+ <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
   <li class="hh"><a href="indexen.html">English</a></li>
     <?php
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
@@ -74,7 +74,7 @@ else
 <br>
 <center id="formLog">
 
-<div class="containers" id="container" style="min-height: 715px;">
+<div class="containers" id="container" style="min-height: 715px;margin-top: 15px;">
 	
 	
 	
