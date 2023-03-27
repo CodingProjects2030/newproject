@@ -53,7 +53,7 @@ else
 </ul>
 </div>
 
-<div id="container" style="margin-top:100px;height:auto;margin-top: 15px;">
+<div id="container" style="margin-top:100px;height:auto;margin-top: 122px;">
   
   <div id="container2" style="height:auto;text-align:right;    background-color: #d4e8d5;">
   <form action="/action_page.php">

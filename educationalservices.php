@@ -13,7 +13,7 @@
 <div class="top">
 <ul>
  
-  <li class="h"><a href="#about"><img src="imgs/br.png" height="70" width="450"></a></li>
+   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
   <li class="hh"><a href="servicesen.html">English</a></li>
  <li class="hh"><a href="parentar.php">ولي الامر</a></li>
   
@@ -28,7 +28,7 @@
 </ul>
 </div>
 
-<div style="background-color:red; width:100%; height:60%;text-align:center;margin-top: 108px;">
+<div style="background-color:red; width:100%; height:60%;text-align:center;margin-top: 157px;">
 <h1> الخدمات التعليمية </h1>
 
 <div style="background-color:yellow; width:20%; height:40%;float:left;margin-left:4%;"></div>
