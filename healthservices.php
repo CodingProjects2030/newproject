@@ -45,7 +45,7 @@ tr:nth-child(even) {
 <ul>
    
  <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
-  <li class="hh"><a href="indexen.html">English</a></li>
+ 
     <?php
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
 echo '<li class="hh"><a href="signout.php">تسجيل الخروج</a></li>';
@@ -63,7 +63,7 @@ else
     <li class="hh"><a href="healthservices.php">الخدمات الصحية</a></li>
  <li class="hh"><a href="educationalservices.php">الخدمات التعليمية</a></li>
 <li class="hh"><a href="entertainmentservices.php">الخدمات الترفيهية</a></li>
-
+ <li class="hh"><a href="indexen.html">English</a></li>
   
   
    
