@@ -104,13 +104,12 @@ html {
 
 }
 
-.wrap {
-
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 60px;
-
+.wrap1 {
+    float: left;
+    margin-left: 30%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
 }
 
 .wrapDown {
@@ -124,10 +123,11 @@ html {
 /* down-3-5.html */
 .wrap2 {
 
-  display: flex;
+    float:left;
+  margin-left:100px;
   align-items: center;
   justify-content: center;
-  margin-top: 82px;
+  margin-top: 60px;
 
 }
 #second2{

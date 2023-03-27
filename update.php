@@ -27,11 +27,11 @@ else
    
   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
   <li class="hh"><a href="indexen.html">English</a></li>
-  <li class="hh"><a href="contactar.html">ولي الامر</a></li>
+  <li class="hh"><a href="parentar.php">ولي الامر</a></li>
   
-    <li class="hh"><a href="contactar.php">الخدمات الصحية</a></li>
- <li class="hh"><a href="login.html">الخدمات التعليمية</a></li>
-<li class="hh"><a href="TeacherAr.html">الخدمات الترفيهية</a></li>
+   <li class="hh"><a href="healthservices.php">الخدمات الصحية</a></li>
+ <li class="hh"><a href="educationalservices.php">الخدمات التعليمية</a></li>
+<li class="hh"><a href="entertainmentservices.php">الخدمات الترفيهية</a></li>
 
   
 	

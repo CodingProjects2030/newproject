@@ -39,11 +39,11 @@ else
 	
 }
 ?>
-  <li class="hh"><a href="parentar.php">ولي الامر</a></li>
+ <li class="hh"><a href="parentar.php">ولي الامر</a></li>
   
-    <li class="hh"><a href="healthar.php">الخدمات الصحية</a></li>
- <li class="hh"><a href="services.html">الخدمات التعليمية</a></li>
-<li class="hh"><a href="services.html">الخدمات الترفيهية</a></li>
+   <li class="hh"><a href="healthservices.php">الخدمات الصحية</a></li>
+ <li class="hh"><a href="educationalservices.php">الخدمات التعليمية</a></li>
+<li class="hh"><a href="entertainmentservices.php">الخدمات الترفيهية</a></li>
 
   
   
