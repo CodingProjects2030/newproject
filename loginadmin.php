@@ -8,7 +8,7 @@
  <title>إعاقتي بداية نجاحي</title>
   <link href="csStu.css" rel="stylesheet">
   <link href="Student.css?session=6" rel="stylesheet">
-   <link href="cs.css?=version=5" rel="stylesheet">
+   <link href="cs.css?=version=6" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
 
 </head>
@@ -18,13 +18,13 @@
 <ul>
    
      <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
-  <li class="hh"><a href="indexen.html">English</a></li>
+  
   <li class="hh"><a href="contactar.html">ولي الامر</a></li>
   
     <li class="hh"><a href="contactar.php">الخدمات الصحية</a></li>
  <li class="hh"><a href="login.html">الخدمات التعليمية</a></li>
 <li class="hh"><a href="TeacherAr.html">الخدمات الترفيهية</a></li>
-
+<li class="hh"><a href="indexen.html">English</a></li>
   
 	
   

@@ -1,97 +1,30 @@
 <?php
    session_start();
-   
-if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
 
-}
-else
-{  	 header('Refresh: 0; URL = login.php');
-}
 
 ?>
 <!DOCTYPE>
 <html lang="en-US">
   <meta charset="UTF-8">
 <head>
- <title>إعاقتي بداية نجاحي</title>
+ <title></title>
   <link href="csStu.css" rel="stylesheet">
   <link href="Student.css?session=6" rel="stylesheet">
-   <link href="cs.css?=version=7" rel="stylesheet">
+   <link href="cs.css?=version=5" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
-<style>
 
-table {
-  font-family: arial, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-  direction:rtl;
-}
-
-td, th {
-  border: 1px solid #dddddd;
-  text-align: center;
-  padding: 8px;
-}
-
-tr:nth-child(even) {
-  background-color: #dddddd;
-}
-.dropbtn {
-  color: #151414;
-
-font-size: 22px;
-border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  
-border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {}
-
-.dropdown:hover .dropdown-content {display: block;position:fixed;}
-
-.dropdown:hover .dropbtn {}
-</style>
 </head>
 <body>
 
 <div class="top">
 <ul>
- 
-  <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
- 
+   
+  <li class="h"><a href="#about"><img src="imgs/br.png" height="70" width="450"></a></li>
+  <li class="hh"><a href="indexen.html">English</a></li>
     <?php
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
-echo '<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="signout.php">تسجيل الخروج</a></li>';
-echo '<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;"><a href="update.php">تحديث البيانات</a></li>';
+echo '<li class="hh"><a href="signout.php">تسجيل الخروج</a></li>';
+echo '<li class="hh"><a href="update.php">تحديث البيانات</a></li>';
 }
 else
 {   ?>
@@ -100,42 +33,23 @@ else
 	
 }
 ?>
-  <li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="parentar.php">ولي الامر</a></li>
+  <li class="hh"><a href="parentar.php">ولي الامر</a></li>
   
-    <li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="healthservices.php">الخدمات الصحية</a></li>
-	
+    <li class="hh"><a href="healthar.php">الخدمات الصحية</a></li>
+ <li class="hh"><a href="services.html">الخدمات التعليمية</a></li>
+<li class="hh"><a href="services.html">الخدمات الترفيهية</a></li>
 
- <li class="hh" style="
-margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="educationalservices.php">الخدمات التعليمية <div class="dropdown-content">
-    <a href="#">اللغة الانجليزية</a>
-    <a href="#">تقنية معلومات</a>
-    <a href="#">اي شي </a>
-  </div></a></div></li>
-<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="entertainmentservices.php">الخدمات الترفيهية</a></li>
-
-   <li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="indexen.html">English</a></li>
+  
   
    
-
+  
 </ul>
 </div>
 
 <br>
 <center id="formLog">
 
-<div class="containers" id="container" style="min-height: 715px;margin-top: 15px;">
+<div class="containers" id="container" style="min-height: 715px;">
 	
 	
 	
@@ -144,18 +58,8 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 				<h1>الخدمات الصحية</h1>
 			<?php
  require_once 'DbConnect.php';
-$id=$_SESSION['userid'];
-$sel_query="Select * from users  where id ='".$id."'"; 
-$result = mysqli_query($conn,$sel_query);
-while($row = mysqli_fetch_assoc($result)) { ?>
-<?php  $fullname = $row["fullname"]; 
- $email = $row["email"]; 
-  $password = $row["password"]; 
-   $sex = $row["sex"]; 
-    $height = $row["height"]; 
-	 $age = $row["age"]; 
-	 $weight = $row["weight"]; 
-$disability = $row["disability"]; }
+$height=$_SESSION['height'];
+$weight=$_SESSION['weight'];
 
 
 ?>
@@ -232,7 +136,7 @@ $bmi = $weight / $newh;
    </p>	
 			
 		
-			
+			<button class="button"onclick="window.location.href='22.php'" >رجوع</button>
   
   
 	
@@ -240,62 +144,6 @@ $bmi = $weight / $newh;
 </div>
 
 
-<div class="containers" id="container" style="min-height: 453px;margin-top: 18px;">
-	
-	
-	
-		<form style= "height:auto;" role = "form"  id="arra" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
-            ?>" method = "post">
-			
-				<h1>اسال الممرضة الصحية</h1>
-	
-			<textarea name="w3review" rows="10" cols="90"> </textarea>
-			
-			<br>
-			
-		
-			
-  
-  
-			<button type="submit" name="signup">ارسل</button>
-		</form>
-	
-	
-	
-</div>
-
-<div class="containers" id="container" style="min-height: 453px;margin-top: 18px;">
-	
-	
-	
-		<form style= "height:auto;" role = "form"  id="arra" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
-            ?>" method = "post">
-			
-				<h1>اسئلتك السابقة</h1>
-	
-			<table>
-  <tr>
-    <th>السؤال</th>
-    <th>الجواب</th>
-   
-  </tr>
-  <tr>
-    <td>سؤال1</td>
-    <td>جواب1</td>
-    
-  </tr>
-  <tr>
-    <td>سءال2</td>
-    <td>جواب2</td>
-   
-  </tr>
-  
-</table>
-		</form>
-	
-	
-	
-</div>
 </center>
 
 

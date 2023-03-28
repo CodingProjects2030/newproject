@@ -8,7 +8,7 @@
  <title>إعاقتي بداية نجاحي</title>
   <link href="csStu.css" rel="stylesheet">
   <link href="Student.css?session=6" rel="stylesheet">
-   <link href="cs.css?=version=5" rel="stylesheet">
+   <link href="cs.css?=version=6" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
 
 </head>

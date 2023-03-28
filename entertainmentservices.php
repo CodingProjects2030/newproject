@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <head>
  <title>تقنيات ووسائل لدعم أصحاب الهمم العاليه</title>
- <link href="cs.css?=version=3" rel="stylesheet">
+ <link href="cs.css?=version=6" rel="stylesheet">
 
 
 </head>
@@ -14,13 +14,13 @@
 <ul>
  
   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
-  <li class="hh"><a href="servicesen.html">English</a></li>
+
    <li class="hh"><a href="parentar.php">ولي الامر</a></li>
    <li class="hh"><a href="healthservices.php">الخدمات الصحية</a></li>
  <li class="hh"><a href="educationalservices.php">الخدمات التعليمية</a></li>
 <li class="hh"><a href="entertainmentservices.php">الخدمات الترفيهية</a></li>
 
-  
+    <li class="hh"><a href="servicesen.html">English</a></li>
   
    
 

@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <head>
  <title>تقنيات ووسائل لدعم أصحاب الهمم العاليه</title>
- <link href="cs.css?=version=3" rel="stylesheet">
+ <link href="cs.css?=version=6" rel="stylesheet">
 
 
 </head>
