@@ -69,6 +69,10 @@ echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
 margin-left: 8px;"><a href="update.php">تحديث البيانات</a></li>';
+echo '<li class="hh" style="border: 2px solid black;
+background-color: white;
+border-radius: 20px;
+margin-left: 8px;"><a href="parentar.php">ولي الامر</a></li>';
 }
 else
 {   ?>
@@ -77,10 +81,7 @@ else
 	
 }
 ?>
-  <li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="parentar.php">ولي الامر</a></li>
+
   
     <li class="hh" style="border: 2px solid black;
 background-color: white;
