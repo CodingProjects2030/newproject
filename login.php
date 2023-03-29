@@ -212,13 +212,13 @@
 	</div>
 	<div class="overlay-container">
 		<div class="overlay" id="ttt">
-			<div class="overlay-panel overlay-left" style="background-image: url(pic1.png);
+			<div class="overlay-panel overlay-left" style="background-image: url(log.png);
     background-repeat: no-repeat;
     background-size: cover;">
 			
 				<button class="ghost" id="signIn">تسجيل الدخول</button>
 			</div>
-			<div class="overlay-panel overlay-right" style="background-image: url(pic1.png);
+			<div class="overlay-panel overlay-right" style="background-image: url(log.png);
     background-repeat: no-repeat;
     background-size: cover;">
 			
