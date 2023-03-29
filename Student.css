@@ -34,8 +34,8 @@ button:focus {
 }
 
 button.ghost {
-background-color: #3460e3;
-    border-color: #FFFFFF;
+background-color: #ffffff;
+    border-color: #000000;
     font-size: 27px;
 }
 
