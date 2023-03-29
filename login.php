@@ -7,7 +7,7 @@
 <head>
  <title>إعاقتي بداية نجاحي</title>
   <link href="csStu.css" rel="stylesheet">
-  <link href="Student.css?session=6" rel="stylesheet">
+  <link href="Student.css?session=7" rel="stylesheet">
    <link href="cs.css?=version=6" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
 
@@ -52,7 +52,7 @@
 			
 			<div class="tryy">
 			<label class="labeloption">الجنس</label>
-			<select style="height: 27px;" name="sex" class="options" class="arrtol">
+			<select style="height: 27px;color: #5f79ca;" name="sex" class="options" class="arrtol">
     <option  value="Female">انثى</option>
     <option value="Male">ذكر</option>
 	
@@ -60,7 +60,7 @@
   	</div>
 	<div class="tryy">
 	<label class="labeloption">الاعاقة</label>
-   <select style="height: 27px;" name="disability" class="options"  class="arrtol">
+   <select style="height: 27px;color: #5f79ca;" name="disability" class="options"  class="arrtol">
     <option value="downSyndrome">سمعية</option>
     <option value="deaf">بصرية</option>
 	  <option value="deaf">حركية</option>
@@ -212,13 +212,13 @@
 	</div>
 	<div class="overlay-container">
 		<div class="overlay" id="ttt">
-			<div class="overlay-panel overlay-left" style="background-image: url(log.png);
+			<div class="overlay-panel overlay-left" style="background-image: url(pic1.png);
     background-repeat: no-repeat;
     background-size: cover;">
 			
 				<button class="ghost" id="signIn">تسجيل الدخول</button>
 			</div>
-			<div class="overlay-panel overlay-right" style="background-image: url(log.png);
+			<div class="overlay-panel overlay-right" style="background-image: url(pic1.png);
     background-repeat: no-repeat;
     background-size: cover;">
 			
