@@ -66,7 +66,7 @@ input {font-size: 20px;
 	border-radius: 10px;
   	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 
 			0 10px 10px rgba(0,0,0,0.22);
-	
+	position: relative;
 	overflow: hidden;
 	width: 768px;
 	max-width: 100%;
@@ -179,7 +179,7 @@ input {font-size: 20px;
 	transform: translateX(0);
 }
 
-#ttt{ 
+#ttt{ background-image: url('imgs/br.png');
   background-repeat: no-repeat;}
 .containers.right-panel-active .overlay-right {
 	transform: translateX(20%);

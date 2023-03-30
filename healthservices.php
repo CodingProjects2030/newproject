@@ -14,9 +14,9 @@ else
   <meta charset="UTF-8">
 <head>
  <title>إعاقتي بداية نجاحي</title>
-  <link href="csStu.css" rel="stylesheet">
-  <link href="Student.css?session=6" rel="stylesheet">
-   <link href="cs.css?=version=7" rel="stylesheet">
+
+  <link href="Student.css?session=8" rel="stylesheet">
+   <link href="cs.css?=version=8" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
 <style>
 

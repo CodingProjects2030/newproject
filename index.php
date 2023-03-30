@@ -118,6 +118,9 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
   background-size: cover;
   position: relative;">
 
+
+
+
 <div class="wrap1" style="float: left;
     margin-left: 0%;
     align-items: center;
@@ -128,6 +131,9 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 <div class="wrap2">
   <button class="button"onclick="window.location.href='loginadmin.php'" >الادارة</button>
 </div>
+
+
+
 
 </div>
 </div>

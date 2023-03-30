@@ -6,8 +6,7 @@
   <meta charset="UTF-8">
 <head>
  <title>إعاقتي بداية نجاحي</title>
-  <link href="csStu.css" rel="stylesheet">
-  <link href="Student.css?session=7" rel="stylesheet">
+  <link href="log.css?session=7" rel="stylesheet">
    <link href="cs.css?=version=6" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
 <style>
@@ -90,11 +89,7 @@ margin-left: 8px;" ><a href="healthservices.php">الخدمات الصحية</a>
 	
 
  <li class="hh" style="
-margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="educationalservices.php">الخدمات التعليمية <div class="dropdown-content">
-    <a href="#">اللغة الانجليزية</a>
-    <a href="#">تقنية معلومات</a>
-    <a href="#">اي شي </a>
-  </div></a></div></li>
+margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="educationalservices.php">الخدمات التعليمية </a></div></li>
 <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
@@ -254,7 +249,7 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 						
 						$_SESSION['userid'] =$fullNamee;
 						 echo 'أهلا بعودتك  سيتم الانتقال للصفحة الرئيسية ';
-					  header('Refresh: 2; URL = index.php');
+					  header('Refresh: 2; URL = update.php');
 						$stmt->close();
 					}else{
 						 

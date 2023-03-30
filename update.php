@@ -15,7 +15,7 @@ else
 <head>
  <title>إعاقتي بداية نجاحي</title>
   <link href="csStu.css" rel="stylesheet">
-  <link href="Student.css?session=6" rel="stylesheet">
+  <link href="Student.css?session=7" rel="stylesheet">
    <link href="cs.css?=version=7" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
 <style>
@@ -118,8 +118,8 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 </div>
 
 <br>
-<center id="formLog">
-<div class="containers" id="container" style="min-height: 715px;margin-top: 15px;">
+<!--<center id="formLog">-->
+<div class="containers" id="container" style="min-height: 715px;margin-top: 143px;margin-left: 25%;width:50%">
 	
 	
 	
@@ -179,7 +179,7 @@ $disability = $row["disability"]; }
 	
 	
 </div>
-</center>
+<!--</center>-->
 
 
 

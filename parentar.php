@@ -119,7 +119,7 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
   
   <div id="container2" style="height:auto;text-align:right;    background-color: #d4e8d5;">
   <form action="/action_page.php">
- <p>رايك بالموقع بشكل عام:</p>
+ <p>:رأيك بالموقع بشكل عام</p>
  <label for="html">ممتاز</label>
   <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
   <br>
@@ -130,7 +130,7 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
   <input type="radio" id="javascript" name="fav_language" value="JavaScript">
   
 <br>  
-<p>رايك بالموقع بشكل عام:</p>
+<p>:مدى استيعاب ابنك \ابنتك للخدمات التعليمية</p>
  <label for="html">ممتاز</label>
   <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
   <br>
@@ -141,7 +141,7 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
   <input type="radio" id="javascript" name="fav_language" value="JavaScript">
   
 <br>  
-<p>رايك بالموقع بشكل عام:</p>
+<p>:مدى استفادة ابنك \ ابنتك من الخدمات التعليمية</p>
  <label for="html">ممتاز</label>
   <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
   <br>
@@ -152,6 +152,28 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
   <input type="radio" id="javascript" name="fav_language" value="JavaScript">
   
 <br> 
+<p>:هل الخدمات الترفيهية مناسبة لابنك \ ابنتك </p>
+ <label for="html">مناسبة جدا</label>
+  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+  <br>
+  <label for="css">نوعا ما</label>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <br>
+  <label for="javascript">غير مناسبة</label>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  
+<br> 
+<p>:مدى رضاكم عن الخدمات الصحية المقدمة </p>
+<label for="html">ممتاز</label>
+  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+  <br>
+  <label for="css">جيد</label>
+  <input type="radio" id="css" name="fav_language" value="CSS">
+  <br>
+  <label for="javascript">سيء</label>
+  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  
+<br>
 <p>اذا كان لديك تعليق يرجى ذكره</p>
  <textarea  name="w3review" rows="4" cols="80"></textarea>
  <br> 
