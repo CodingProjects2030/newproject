@@ -252,6 +252,52 @@ $bmi = $weight / $newh;
 			<textarea name="w3review" rows="10" cols="90"> </textarea>
 			
 			<br>
+			<?php
+		 require_once 'DbConnect.php';
+				
+
+         
+			
+			
+            
+			
+			if (isset($_POST['signup']) && !empty($_POST['email']) 
+               && !empty($_POST['password'])) {
+				  
+				  
+				  $id=$_SESSION['userid'];
+	
+	$fullname=$_POST['fullname'];
+
+			$stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
+					$stmt->bind_param("s", $email);
+					$stmt->execute();
+					$stmt->store_result();
+					
+					if($stmt->num_rows > 0){
+					
+					 echo 'عفوا , البريد الالكتروني مسجل مسبقا ';
+						$stmt->close();
+					}else{
+						 
+						$stmt = $conn->prepare("INSERT INTO users (fullname, email,password, disability,age,sex,height,weight) VALUES ( ?, ?, ? ,?,?,?,?,?)");
+						$stmt->bind_param("ssssssss", $fullname, $email, $password, $disability, $age, $sex, $height, $weight);
+						
+						if($stmt->execute()){
+						$stmt->close();
+							
+						
+							 echo 'شكرا لك, ييمكنك تسجيل الدخول الان ';
+						}
+  
+   
+				   
+				   
+				   
+		
+			   }}
+			
+         ?>
 			
 		
 			
