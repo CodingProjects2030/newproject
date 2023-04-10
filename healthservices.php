@@ -112,10 +112,10 @@ margin-left: 8px;" ><a href="healthservices.php">الخدمات الصحية</a>
 	
 
  <li class="hh" style="
-margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="educationalservices.php">الخدمات التعليمية <div class="dropdown-content">
-    <a href="#">اللغة الانجليزية</a>
-    <a href="#">تقنية معلومات</a>
-    <a href="#">اي شي </a>
+margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">الخدمات التعليمية <div class="dropdown-content">
+    <a href="educationalservices.php?id=1">اللغة الانجليزية</a>
+    <a href="educationalservices.php?id=2">تقنية معلومات</a>
+   
   </div></a></div></li>
 <li class="hh" style="border: 2px solid black;
 background-color: white;
@@ -249,9 +249,16 @@ $bmi = $weight / $newh;
 			
 				<h1>اسال الممرضة الصحية</h1>
 	
-			<textarea name="w3review" rows="10" cols="90"> </textarea>
+			<textarea name="question" rows="10" cols="90"> </textarea>
 			
 			<br>
+			
+		
+			
+  
+  
+			<button type="submit" name="signup">ارسل</button>
+			
 			<?php
 		 require_once 'DbConnect.php';
 				
@@ -261,33 +268,26 @@ $bmi = $weight / $newh;
 			
             
 			
-			if (isset($_POST['signup']) && !empty($_POST['email']) 
-               && !empty($_POST['password'])) {
+			if (isset($_POST['question']) && !empty($_POST['question']) 
+               ) {
 				  
 				  
-				  $id=$_SESSION['userid'];
-	
-	$fullname=$_POST['fullname'];
-
-			$stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
-					$stmt->bind_param("s", $email);
-					$stmt->execute();
-					$stmt->store_result();
-					
-					if($stmt->num_rows > 0){
-					
-					 echo 'عفوا , البريد الالكتروني مسجل مسبقا ';
-						$stmt->close();
-					}else{
-						 
-						$stmt = $conn->prepare("INSERT INTO users (fullname, email,password, disability,age,sex,height,weight) VALUES ( ?, ?, ? ,?,?,?,?,?)");
-						$stmt->bind_param("ssssssss", $fullname, $email, $password, $disability, $age, $sex, $height, $weight);
+				   $question=$_POST['question']; 
+				  $answer = 'لم تتم الاجابة بعد';
+ 
+						$stmt = $conn->prepare("INSERT INTO health (userId, question,answer) VALUES (?,?,?)");
+						$stmt->bind_param("sss", $id, $question, $answer);
 						
+						//if the user is successfully added to the database 
 						if($stmt->execute()){
 						$stmt->close();
 							
-						
-							 echo 'شكرا لك, ييمكنك تسجيل الدخول الان ';
+							//adding the user data in response 
+							//$response['error'] = false; 
+						//	$response['message'] = 'User registered successfully'; 
+							//$response['user'] = $user; 
+							 echo 'شكرا لك , لقد تم ارسال استفسارك بنجاح ';
+							  header('Refresh: 2; URL = healthservices.php');
 						}
   
    
@@ -295,15 +295,9 @@ $bmi = $weight / $newh;
 				   
 				   
 		
-			   }}
+			   }
 			
          ?>
-			
-		
-			
-  
-  
-			<button type="submit" name="signup">ارسل</button>
 		</form>
 	
 	
@@ -314,30 +308,46 @@ $bmi = $weight / $newh;
 	
 	
 	
-		<form style= "height:auto;" role = "form"  id="arra" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
-            ?>" method = "post">
+	
 			
 				<h1>اسئلتك السابقة</h1>
-	
-			<table>
+				
+				<?php
+$stmt = $conn->prepare("SELECT id FROM health WHERE userid = ?" );
+					$stmt->bind_param("s", $id);
+					$stmt->execute();
+					$stmt->store_result();
+					$stmt->bind_result($fullNamee);
+							$stmt->fetch();
+					
+					if($stmt->num_rows > 0){
+						echo '<table>
   <tr>
     <th>السؤال</th>
-    <th>الجواب</th>
-   
-  </tr>
-  <tr>
-    <td>سؤال1</td>
-    <td>جواب1</td>
+    <th>الجواب</th></tr>';
+						$sel_query="Select * from health  where userid ='".$id."'"; 
+$result = mysqli_query($conn,$sel_query);
+while($row = mysqli_fetch_assoc($result)) { ?>
+<?php 
+echo ' <tr>
+    <td>'; echo $row["question"];echo ' </td>
+    <td>'; echo $row["answer"]; echo'</td>
     
-  </tr>
-  <tr>
-    <td>سءال2</td>
-    <td>جواب2</td>
-   
-  </tr>
-  
-</table>
-		</form>
+  </tr>';
+
+ }
+ echo'</table>';
+						
+					}
+					else{echo '<p> لا توجد لديك اي استفسارات </p>';}
+						
+
+
+
+?>
+	
+		
+		
 	
 	
 	

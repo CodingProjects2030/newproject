@@ -16,7 +16,7 @@ else
  <title>إعاقتي بداية نجاحي</title>
   <link href="csStu.css" rel="stylesheet">
   <link href="Student.css?session=7" rel="stylesheet">
-   <link href="cs.css?=version=7" rel="stylesheet">
+   <link href="csen.css?=version=7" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
 <style>
 .dropbtn {
@@ -72,11 +72,11 @@ if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
 echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="signout.php">تسجيل الخروج</a></li>';
+margin-left: 8px;" ><a href="signout.php">Sign Out</a></li>';
 echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;"><a href="update.php">تحديث البيانات</a></li>';
+margin-left: 8px;"><a href="updateen.php">Update Info</a></li>';
 }
 else
 {   ?>
@@ -88,29 +88,29 @@ else
   <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="parentar.php">ولي الامر</a></li>
+margin-left: 8px;" ><a href="parenten.php">Parents</a></li>
   
     <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="healthservices.php">الخدمات الصحية</a></li>
+margin-left: 8px;" ><a href="healthservices.php">Health Services</a></li>
 	
 
-  <li class="hh" style="
-margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">الخدمات التعليمية <div class="dropdown-content">
-    <a href="educationalservices.php?id=1">اللغة الانجليزية</a>
-    <a href="educationalservices.php?id=2">تقنية معلومات</a>
+ <li class="hh" style="
+margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Education Services <div class="dropdown-content">
+    <a href="educationalservices.php?id=1">English</a>
+    <a href="educationalservices.php?id=2">Information Technology</a>
    
   </div></a></div></li>
 <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="entertainmentservices.php">الخدمات الترفيهية</a></li>
+margin-left: 8px;" ><a href="entertainmentservicesen.php">Entertainment Services</a></li>
 
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="updateen.php">English</a></li>
+margin-left: 8px;" ><a href="update.php">العربية</a></li>
   
    
 
@@ -124,9 +124,9 @@ margin-left: 8px;" ><a href="updateen.php">English</a></li>
 	
 	
 		<form role = "form"  id="arra" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
-            ?>" method = "post">
+            ?>" method = "post" style="direction:ltr;">
 			
-				<h1>تحديث البيانات</h1>
+				<h1>Update Information</h1>
 			<?php
  require_once 'DbConnect.php';
 $id=$_SESSION['userid'];
@@ -147,7 +147,7 @@ $disability = $row["disability"]; }
 			<input type="text" placeholder="<?php echo $fullname; ?>" name="fullname2" required />
 			<input type="text" placeholder="<?php echo $email; ?>"  name="email2" required />
 			<input type="password" placeholder="<?php echo $password; ?>" name="password2" required />
-			<input type="password" placeholder="اعادة كلمة المرور" name="password22" required />
+			<input type="password" placeholder="password" name="password22" required />
 			<input type="text" placeholder="<?php echo $age; ?>" name="age2" required />
 			<input type="text" placeholder="<?php echo $weight; ?>" name="weight2" required />
 			<input type="text" placeholder="<?php echo $height; ?>" name="height2" required />
@@ -155,15 +155,15 @@ $disability = $row["disability"]; }
 			
 			
 			<div class="tryy">
-			<label class="labeloption">الجنس</label>
+			<label class="labeloption">Gender</label>
 			<select style="height: 27px;" name="genderOption" class="options" class="arrtol">
-    <option  value="Female">انثى</option>
-    <option value="Male">ذكر</option>
+    <option  value="Female">Female</option>
+    <option value="Male">Male</option>
 	
   </select>
   	</div>
 	<div class="tryy">
-	<label class="labeloption">الاعاقة</label>
+	<label class="labeloption">Disability</label>
    <select style="height: 27px;" name="categoryOption" class="options"  class="arrtol">
     <option value="downSyndrome">سمعية</option>
     <option value="deaf">بصرية</option>
@@ -173,7 +173,7 @@ $disability = $row["disability"]; }
 			
   
   
-			<button type="submit" name="signup">تحديث</button>
+			<button type="submit" name="signup">Update</button>
 		</form>
 	
 	

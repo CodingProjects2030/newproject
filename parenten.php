@@ -14,7 +14,7 @@ else
   <meta charset="UTF-8">
 <head>
  <title>تقنيات ووسائل لدعم أصحاب الهمم العاليه</title>
- <link href="cs.css?=version=7" rel="stylesheet">
+ <link href="csen.css?=version=7" rel="stylesheet">
 <style>
 p {color:red;}
 
@@ -65,16 +65,16 @@ border-radius: 20px;
  
   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
  
-    <?php
+      <?php
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
 echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="signout.php">تسجيل الخروج</a></li>';
+margin-left: 8px;" ><a href="signout.php">Sign Out</a></li>';
 echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;"><a href="update.php">تحديث البيانات</a></li>';
+margin-left: 8px;"><a href="updateen.php">Update Info</a></li>';
 }
 else
 {   ?>
@@ -83,32 +83,33 @@ else
 	
 }
 ?>
+
   <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="parentar.php">ولي الامر</a></li>
+margin-left: 8px;" ><a href="parenten.php">Parents</a></li>
   
     <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="healthservices.php">الخدمات الصحية</a></li>
+margin-left: 8px;" ><a href="healthservices.php">Health Services</a></li>
 	
 
  <li class="hh" style="
-margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">الخدمات التعليمية <div class="dropdown-content">
-    <a href="educationalservices.php?id=1">اللغة الانجليزية</a>
-    <a href="educationalservices.php?id=2">تقنية معلومات</a>
+margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Education Services <div class="dropdown-content">
+    <a href="educationalservices.php?id=1">English</a>
+    <a href="educationalservices.php?id=2">Information Technology</a>
    
   </div></a></div></li>
 <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="entertainmentservices.php">الخدمات الترفيهية</a></li>
+margin-left: 8px;" ><a href="entertainmentservicesen.php">Entertainment Services</a></li>
 
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="indexen.html">English</a></li>
+margin-left: 8px;" ><a href="parentar.php">العربية</a></li>
   
    
 

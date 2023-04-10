@@ -85,10 +85,10 @@ margin-left: 8px;" ><a href="healthservices.php">الخدمات الصحية</a>
 	
 
  <li class="hh" style="
-margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="educationalservices.php">الخدمات التعليمية <div class="dropdown-content">
-    <a href="#">اللغة الانجليزية</a>
-    <a href="#">تقنية معلومات</a>
-    <a href="#">اي شي </a>
+margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">الخدمات التعليمية <div class="dropdown-content">
+    <a href="educationalservices.php?id=1">اللغة الانجليزية</a>
+    <a href="educationalservices.php?id=2">تقنية معلومات</a>
+   
   </div></a></div></li>
 <li class="hh" style="border: 2px solid black;
 background-color: white;
@@ -109,8 +109,15 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 
 
 
+<?php $id=$_REQUEST['id']; 
 
-<h1> الخدمات التعليمية </h1>
+if ($id==2)
+	
+	{ echo '<h1> كرسات تقنية المعلومات </h1>';}
+	if ($id==1)
+	
+	{ echo '<h1> كورسات اللغة الانجليزية </h1>';}
+	?>
 
 <div style=" width:80%; height:20%;float:left;margin-left:10%;border: 2px solid black;
 background-color: white;
@@ -127,7 +134,17 @@ width: 40%;
 
 float: right;
 margin-top: 33px;
-font-size: 24px;">تعلم اللغة الإنجليزية الكورس الأول</div> 
+font-size: 24px;">
+<?php
+
+if ($id==2)
+	
+	{ echo 'تعلم الاكسل الكورس الاول';}
+	if ($id==1)
+	
+	{ echo 'تعلم اللغة الإنجليزية الكورس الأول';}
+	?>
+</div> 
 
 
 <div style="width: 12%;
@@ -138,7 +155,7 @@ margin-left: 5px;">
 <p class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a style="text-decoration:none;" href="healthservices.php">تعلم الان</a></p>
+margin-left: 8px;" ><a style="text-decoration:none;" href="education1.php">تعلم الان</a></p>
 
 </div> 
 
@@ -162,7 +179,19 @@ width: 40%;
 
 float: right;
 margin-top: 33px;
-font-size: 24px;">تعلم اللغة الإنجليزية الكورس الثاني</div> 
+font-size: 24px;">
+
+<?php
+
+if ($id==2)
+	
+	{ echo 'تعلم الاكسل الكورس لثاني';}
+	if ($id==1)
+	
+	{ echo 'تعلم اللغة الإنجليزية الكورس الثاني';}
+	?>
+	
+	</div> 
 
 
 <div style="width: 12%;

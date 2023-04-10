@@ -82,26 +82,12 @@ else
 ?>
 
   
-    <li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="healthservices.php">الخدمات الصحية</a></li>
-	 <li class="hh" style="
-margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">الخدمات التعليمية <div class="dropdown-content">
-    <a href="educationalservices.php?id=1">اللغة الانجليزية</a>
-    <a href="educationalservices.php?id=2">تقنية معلومات</a>
-   
-  </div></a></div></li>
-
- <li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="entertainmentservices.php">الخدمات الترفيهية</a></li>
-
+  
+ 
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="indexen.html">English</a></li>
+margin-left: 8px;" ><a href="loginadmin2en.php">English</a></li>
   
    
 
@@ -121,26 +107,13 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 			<input type="text" placeholder="الاسم الكامل" name="fullname" required />
 			<input type="text" placeholder="البريد الالكتروني"  name="email" required />
 			<input type="password" placeholder="كلمة السر" name="password" required />
-			<input type="text" placeholder="العمر" name="age" required />
-			<input type="text" placeholder="الوزن" name="weight" required />
-			<input type="text" placeholder="الطول" name="height" required />
 			
-			
-			
-			<div class="tryy">
-			<label class="labeloption">الجنس</label>
-			<select style="height: 27px;color: #5f79ca;" name="sex" class="options" class="arrtol">
-    <option  value="Female">انثى</option>
-    <option value="Male">ذكر</option>
-	
-  </select>
-  	</div>
 	<div class="tryy">
-	<label class="labeloption">الاعاقة</label>
-   <select style="height: 27px;color: #5f79ca;" name="disability" class="options"  class="arrtol">
-    <option value="downSyndrome">سمعية</option>
-    <option value="deaf">بصرية</option>
-	  <option value="deaf">حركية</option>
+	<label class="category">الفئة</label>
+   <select style="height: 27px;color: #5f79ca;" name="category" class="options"  class="arrtol">
+    <option value="admin">ادارة</option>
+    <option value="health">الممرضة الصحية</option>
+	
   </select>
 	</div>
 			
@@ -172,18 +145,15 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 				  
 				   $password=$_POST['password']; 
 				    $email=$_POST['email'];  
-    $age=$_POST['age'];  
-	$disability=$_POST['disability'];
-	$sex=$_POST['sex'];
-	$height=$_POST['height'];
-	$weight=$_POST['weight'];  
+    $category=$_POST['category'];  
+	 
 	
 	$fullname=$_POST['fullname'];
 
 //checking if the user is already exist with this fullname or mobile
 					//as the mobile and fullname should be unique for every user 
 		//			$stmt = $conn->prepare("SELECT id FROM student WHERE email = ? OR mobile = ?");
-			$stmt = $conn->prepare("SELECT id FROM users WHERE email = ?");
+			$stmt = $conn->prepare("SELECT id FROM admin WHERE email = ?");
 					$stmt->bind_param("s", $email);
 					$stmt->execute();
 					$stmt->store_result();
@@ -197,8 +167,8 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 					}else{
 						 
 						//if user is new creating an insert query 
-						$stmt = $conn->prepare("INSERT INTO users (fullname, email,password, disability,age,sex,height,weight) VALUES ( ?, ?, ? ,?,?,?,?,?)");
-						$stmt->bind_param("ssssssss", $fullname, $email, $password, $disability, $age, $sex, $height, $weight);
+						$stmt = $conn->prepare("INSERT INTO admin (fullname, email,password, category) VALUES ( ?,?,?,?)");
+						$stmt->bind_param("ssss", $fullname, $email, $password, $category);
 						
 						//if the user is successfully added to the database 
 						if($stmt->execute()){
@@ -232,12 +202,12 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 				  
 				   $email1=$_POST['email1']; 
 				    $password1=$_POST['password1'];  
-   
+    $category1=$_POST['category1'];
 
 //checking if the user is already exist with this fullname or mobile
 					//as the mobile and fullname should be unique for every user 
 		//			$stmt = $conn->prepare("SELECT id FROM student WHERE email = ? OR mobile = ?");
-			$stmt = $conn->prepare("SELECT id FROM users WHERE email = ? AND password = ?" );
+			$stmt = $conn->prepare("SELECT id FROM admin WHERE email = ? AND password = ?" );
 					$stmt->bind_param("ss", $email1, $password1);
 					$stmt->execute();
 					$stmt->store_result();
@@ -250,9 +220,14 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 					//if the user already exist in the database 
 					if($stmt->num_rows > 0){
 						
-						$_SESSION['userid'] =$fullNamee;
+						$_SESSION['health'] =$fullNamee;
+						if($category1=='health')
+						{echo 'أهلا بعودتك  سيتم الانتقال للصفحة الرئيسية ';
+					  header('Refresh: 2; URL = healthadmin.php');}
+					  
+					  else{
 						 echo 'أهلا بعودتك  سيتم الانتقال للصفحة الرئيسية ';
-					  header('Refresh: 2; URL = update.php');
+					  header('Refresh: 2; URL = admin.php');}
 						$stmt->close();
 					}else{
 						 
@@ -283,6 +258,14 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 			
 			<input type="text" placeholder="البريد الالكتروني" name="email1" required />
 			<input type="password" placeholder="كلمة السر" name="password1" required />
+			<div class="tryy">
+	<label class="category1">الفئة</label>
+   <select style="height: 27px;color: #5f79ca;" name="category1" class="options"  class="arrtol">
+    <option value="admin">ادارة</option>
+    <option value="health">الممرضة الصحية</option>
+	
+  </select>
+	</div>
 			
 			<button type="submit" onclick="hh()" name="login">دخول</button>
 		</form>

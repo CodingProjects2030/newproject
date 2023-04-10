@@ -1,0 +1,375 @@
+/* TOP // LIST // LOGO */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #e7ffe8;
+  left: 0;
+  top:0;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #939393;
+}
+
+li.hh{
+margin-top: 8px;
+font-size:20px;}
+
+li.hh{
+float: left;}
+
+
+/* INTRO PARAGRAPH */
+#container{
+
+
+font-size:25px;
+width:97%;
+height:100px;
+margin:4 auto;
+margin-top: 220px;
+border-radius: 50px 20px;
+padding:19px;
+display: inline-block;
+
+}
+
+#container2{
+background-color: #427644;
+    font-size: 25px;
+    width: 40%;
+    height: 100px;
+    margin: 4 auto;
+    border-radius: 50px 20px;
+    padding: 19px;
+    color: white;
+	text-align: center;
+
+}
+
+#kk{
+    margin-top: -170px;
+width:25%;
+height:340px;
+float:right;
+border-radius: 50px 20px;
+padding:19px;
+display: inline-block;
+
+}
+
+#kk1{
+    margin-top: -25px;
+
+width:25%;
+height:340px;
+float:left;
+border-radius: 50px 20px;
+padding:19px;
+display: inline-block;
+
+}
+
+.center2 {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 300px;
+      margin-top: 89px;
+
+}
+
+
+/* BUTTON ENETER */
+
+
+html {
+
+    background-color:white;
+  /*    background-image: url(rCqRwz.jpg);  */
+
+}
+
+.wrap1 {
+    float: left;
+    
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.wrapDown {
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 73px;
+
+}
+/* down-3-5.html */
+.wrap2 {
+
+    float:right;
+  
+  align-items: center;
+  justify-content: center;
+  
+
+}
+#second2{
+	margin-top:9px;
+}
+/* end */
+
+/* 2.html */
+
+#second3{
+	margin-top:2px;
+}
+/* end */
+.button {
+min-width: 300px;
+    min-height: 60px;
+    font-family: 'Nunito', sans-serif;
+    font-size: 22px;
+    text-transform: uppercase;
+    letter-spacing: 1.3px;
+    font-weight: 700;
+    color: #313133;
+    background: #d3d3d3;
+    background: linear-gradient(90deg, rgb(123 172 125) 0%, rgb(171 213 173) 100%);
+    border: none;
+    border-radius: 1000px;
+    box-shadow: 12px 12px 24px rgba(218 189 189);
+    transition: all 0.3s ease-in-out 0s;
+    cursor: pointer;
+    outline: none;
+    position: relative;
+    padding: 10px;
+  }
+
+.button::before {
+content: '';
+  border-radius: 1000px;
+  min-width: calc(300px + 12px);
+  min-height: calc(60px + 12px);
+  border: 6px solid #d3d3d3;
+  box-shadow: 0 0 60px rgba(211 211 211);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 0;
+  transition: all .3s ease-in-out 0s;
+}
+
+.button:hover, .button:focus {
+  color: green;
+  transform: translateY(-6px);
+}
+
+.button:hover::before, .button:focus::before {
+  opacity: 1;
+}
+
+.button::after {
+  content: '';
+  width: 30px; height: 30px;
+  border-radius: 100%;
+  border: 6px solid #d3d3d3;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  animation: ring 1.5s infinite;
+}
+
+.button:hover::after, .button:focus::after {
+  animation: none;
+  display: none;
+}
+
+@keyframes ring {
+  0% {
+    width: 10px;
+    height: 30px;
+    opacity: 1;
+  }
+  100% {
+    width: 300px;
+    height: 300px;
+    opacity: 0;
+  }
+}
+
+#first{
+	margin-top:10px;
+}
+#second{
+	margin-top:53px;
+}
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #d3d3d3;
+  color: white;
+  text-align: center;
+  color:black;
+  font-weight: bold;
+}
+
+.top {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  background-color: #d3d3d3;
+  color: white;
+  text-align: center;
+}
+.btPadd{
+	padding:30px;
+}
+
+/* down3-5.html */
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 30%;
+ // padding: 10px;
+  height: 300px; /* Should be removed. Only for demonstration */
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#row1{margin-top:100px;
+text-align:center;
+width:100%;}
+.row.row1{
+	margin-top:20px;
+text-align:center;
+width:100%;}
+#row2{text-align:center;
+width:100%;}
+#column1{margin-left: 10%;}
+#column2{margin-left: 10%;}
+
+/* games*/
+.column.columngames{margin-right: 212px;
+    width: 300px;
+    margin-left: 114px;
+	text-align:center;
+	font-size:25px;
+}
+
+.column.columngames2{
+    width: 300px;
+  float:center;
+  margin:0 auto;
+	text-align:center;
+	font-size:25px;
+}
+
+.column.columngames3{
+	float: right;
+    width: 300px;
+	margin-right:114px;
+    
+	text-align:center;
+	font-size:25px;
+}
+
+.gamesEnjas{
+	color:red;
+	font-size:25px;}
+
+
+/* down-3-5-colors.html*/
+#vid{visibility:hidden;}
+
+
+.topWrapper {
+    width:100%;
+    text-align:center;
+	margin-bottom:20px;
+}
+
+.left {
+    width:25%;
+    height:200px;
+    
+    display:inline-block;
+    margin-right:20px;
+}
+.center {
+    width:25%;
+    height:200px;
+    display:inline-block;
+    
+    margin-right:20px;
+}
+.centerMain {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+      margin-top: 90px;
+}
+
+.right {
+    width:25%;
+    height:200px;
+   
+    display:inline-block;
+    margin-right:20px;
+}
+
+.maincontentWrapper {margin-bottom: 100px;}
+	
+	/* end of down-3-5-colors.html*/
+	
+	h1{  text-align:center;}
+	
+	#q1{text-align:center;
+	font-size:30px;
+	color:red;
+	margin-top:100px;}
+		.row.q1{
+			margin-top:30px;text-align:center;
+	font-size:30px;
+	color:red;
+	margin-bottom: 50px;
+	}
+	audio{display:bolck;}
+	
+	#froo{text-align:center;
+	margin-bottom:300px;}
+	
+	label {    color: #409e4c;}
