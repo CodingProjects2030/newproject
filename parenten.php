@@ -119,63 +119,63 @@ margin-left: 8px;" ><a href="parentar.php">العربية</a></li>
 <div id="container" style="margin-top:100px;height:auto;margin-top: 122px;">
   
   <div id="container2" style="height:auto;text-align:right;    background-color: #d4e8d5;">
-  <form action="/action_page.php">
- <p>:رأيك بالموقع بشكل عام</p>
- <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+  <form action="/action_page.php" style="text-align:left;">
+ <p>What is your opinion about this website:</p>
+ <label for="html">Excelent</label>
+  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
   <br>
-  <label for="css">جيد</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Good</label>
+  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
   <br>
-  <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Bad</label>
+  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
   
 <br>  
-<p>:مدى استيعاب ابنك \ابنتك للخدمات التعليمية</p>
- <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+<p>What is you child understanding from educational services:</p>
+ <label for="html">Excelent</label>
+  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
   <br>
-  <label for="css">جيد</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Good</label>
+  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
   <br>
-  <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Bad</label>
+  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
   
 <br>  
-<p>:مدى استفادة ابنك \ ابنتك من الخدمات التعليمية</p>
- <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+<p>What is you child benefit from educational services:</p>
+ <label for="html">Excelent</label>
+  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
   <br>
-  <label for="css">جيد</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Good</label>
+  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
   <br>
-  <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Bad</label>
+  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
   
 <br> 
-<p>:هل الخدمات الترفيهية مناسبة لابنك \ ابنتك </p>
- <label for="html">مناسبة جدا</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+<p>Is entertainment services are suitable for your child ? </p>
+ <label for="html">Yes</label>
+  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
   <br>
-  <label for="css">نوعا ما</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">little</label>
+  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
   <br>
-  <label for="javascript">غير مناسبة</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">No</label>
+  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
   
 <br> 
-<p>:مدى رضاكم عن الخدمات الصحية المقدمة </p>
-<label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+<p>How satisfied are you with the health services provided? </p>
+<label for="html">Excelent</label>
+  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
   <br>
-  <label for="css">جيد</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Good</label>
+  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
   <br>
-  <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Bad</label>
+  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
   
 <br>
-<p>اذا كان لديك تعليق يرجى ذكره</p>
+<p>If you have a comment please mention it</p>
  <textarea  name="w3review" rows="4" cols="80"></textarea>
  <br> 
 <br>  
@@ -183,7 +183,7 @@ margin-left: 8px;" ><a href="parentar.php">العربية</a></li>
     background-color: #93ce95;
     color: white;
     font-size: 22px;
-    padding: 8px;" type="submit" onclick="hh()" name="login">ارسال</button>
+    padding: 8px;" type="submit" onclick="hh()" name="login">Send</button>
 	
 	<?php
 		 require_once 'DbConnect.php';
@@ -212,7 +212,7 @@ margin-left: 8px;" ><a href="parentar.php">العربية</a></li>
 							//$response['error'] = false; 
 						//	$response['message'] = 'User registered successfully'; 
 							//$response['user'] = $user; 
-							 echo 'شكرا لك , لقد تم ارسال استفسارك بنجاح ';
+							 echo 'Thank you your comment has been sent ';
 							  header('Refresh: 2; URL = healthservices.php');
 						}
   
