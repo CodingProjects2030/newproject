@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
 <head>
  <title>تقنيات ووسائل لدعم أصحاب الهمم العاليه</title>
- <link href="cs.css?=version=6" rel="stylesheet">
+ <link href="cs.css?=version=7" rel="stylesheet">
 
 <style>
 
@@ -98,7 +98,7 @@ margin-left: 8px;" ><a href="entertainmentservices.php">الخدمات التر�
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="educationalservicesen.php?id=1">English</a></li>
+margin-left: 8px;" ><a href="education1en.php">English</a></li>
   
    
 
@@ -106,109 +106,12 @@ margin-left: 8px;" ><a href="educationalservicesen.php?id=1">English</a></li>
 </div>
 
 <div style=" width:100%; height:60%;text-align:center;margin-top: 157px;">
+<h1> تعلم الاكسل الكورس الاول </h1>
 
 
+<iframe width="420" height="345" src="https://www.youtube.com/embed/k1VUZEVuDJ8">
+</iframe>
 
-<?php $id=$_REQUEST['id']; 
-
-if ($id==2)
-	
-	{ echo '<h1> كرسات تقنية المعلومات </h1>';}
-	if ($id==1)
-	
-	{ echo '<h1> كورسات اللغة الانجليزية </h1>';}
-	?>
-
-<div style=" width:80%; height:20%;float:left;margin-left:10%;border: 2px solid black;
-background-color: white;
-border-radius: 20px;">
-
-<div style="width: 10%;
-height: 100%;
-float: right;">
-<img style="margin-top: 5px;" src="imgs/ENG1.jpg" height="90%" width="90%">
-</div> 
-
-<div style="
-width: 40%;
-
-float: right;
-margin-top: 33px;
-font-size: 24px;">
-<?php
-
-if ($id==2)
-	
-	{ echo 'تعلم الاكسل الكورس الاول';}
-	if ($id==1)
-	
-	{ echo 'تعلم اللغة الإنجليزية الكورس الأول';}
-	?>
-</div> 
-
-
-<div style="width: 12%;
-height: 100%;
-float: left;
-font-size: 27px;
-margin-left: 5px;">
-<p class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a style="text-decoration:none;" href="education1.php">تعلم الان</a></p>
-
-</div> 
-
-<!--<img src="imgs/logo.png" height="120" width="230">  <p style="display:inlibe-block;">  hhhhhhhhhhhh</p>  <a style="display:inlibe-block;">hhjj</a>
--->
-
-</div> 
-
-<div style=" width:80%; height:20%;float:left;margin-left:10%;border: 2px solid black;
-background-color: white;
-border-radius: 20px;margin-top:20px;">
-
-<div style="width: 10%;
-height: 100%;
-float: right;">
-<img style="margin-top: 5px;" src="imgs/ENG2.jpg" height="90%" width="90%">
-</div> 
-
-<div style="
-width: 40%;
-
-float: right;
-margin-top: 33px;
-font-size: 24px;">
-
-<?php
-
-if ($id==2)
-	
-	{ echo 'تعلم الاكسل الكورس لثاني';}
-	if ($id==1)
-	
-	{ echo 'تعلم اللغة الإنجليزية الكورس الثاني';}
-	?>
-	
-	</div> 
-
-
-<div style="width: 12%;
-height: 100%;
-float: left;
-font-size: 27px;
-margin-left: 5px;">
-<p class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a style="text-decoration:none;" href="healthservices.php">تعلم الان</a></p>
-
-</div> 
-
-
-
-</div> 
 
 </div>
 

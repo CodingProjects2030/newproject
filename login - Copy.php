@@ -5,69 +5,29 @@
 <html lang="en-US">
   <meta charset="UTF-8">
 <head>
- <title></title>
-  <link href="log.css?session=7" rel="stylesheet">
-   <link href="csen.css?=version=6" rel="stylesheet">
+ <title>إعاقتي بداية نجاحي</title>
+  <link href="csStu.css" rel="stylesheet">
+  <link href="Student.css?session=7" rel="stylesheet">
+   <link href="cs.css?=version=6" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
-<style>
-.dropbtn {
-  color: #151414;
 
-font-size: 22px;
-border: none;
-}
-
-.dropdown {
-  position: relative;
-  display: inline-block;
-  
-border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f1f1f1;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.dropdown-content a {
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-content a:hover {}
-
-.dropdown:hover .dropdown-content {display: block;position:fixed;}
-
-.dropdown:hover .dropbtn {}
-
-
-</style>
 </head>
 <body>
 
 <div class="top">
 <ul>
- 
-  <li class="h"><a href="indexen.php"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
-
-
-  
- 
-    <li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="login.php">العربية</a></li>
-  
    
+     <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
+  <li class="hh"><a href="indexen.html">English</a></li>
+  <li class="hh"><a href="contactar.html">ولي الامر</a></li>
+  
+    <li class="hh"><a href="contactar.php">الخدمات الصحية</a></li>
+ <li class="hh"><a href="login.html">الخدمات التعليمية</a></li>
+<li class="hh"><a href="TeacherAr.html">الخدمات الترفيهية</a></li>
 
+  
+	
+  
 </ul>
 </div>
 
@@ -78,38 +38,38 @@ margin-left: 8px;" ><a href="login.php">العربية</a></li>
 		<form role = "form"  id="arra" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
             ?>" method = "post">
 			
-				<h1>Create Account</h1>
+				<h1>انشاء حساب</h1>
 			
 			  
-			<input type="text" placeholder="Full Name" name="fullname" required />
-			<input type="text" placeholder="Email"  name="email" required />
-			<input type="password" placeholder="Password" name="password" required />
-			<input type="text" placeholder="Age" name="age" required />
-			<input type="text" placeholder="Weight" name="weight" required />
-			<input type="text" placeholder="Height" name="height" required />
+			<input type="text" placeholder="الاسم الكامل" name="fullname" required />
+			<input type="text" placeholder="البريد الالكتروني"  name="email" required />
+			<input type="password" placeholder="كلمة السر" name="password" required />
+			<input type="text" placeholder="العمر" name="age" required />
+			<input type="text" placeholder="الوزن" name="weight" required />
+			<input type="text" placeholder="الطول" name="height" required />
 			
 			
 			
 			<div class="tryy">
-			<label class="labeloption">Gender</label>
+			<label class="labeloption">الجنس</label>
 			<select style="height: 27px;color: #5f79ca;" name="sex" class="options" class="arrtol">
-    <option  value="Female">Female</option>
-    <option value="Male">Male</option>
+    <option  value="Female">انثى</option>
+    <option value="Male">ذكر</option>
 	
   </select>
   	</div>
 	<div class="tryy">
-	<label class="labeloption">Disability</label>
+	<label class="labeloption">الاعاقة</label>
    <select style="height: 27px;color: #5f79ca;" name="disability" class="options"  class="arrtol">
-    <option value="deafness">deafness</option>
-    <option value="visual">visual</option>
-	  <option value="mobility">mobility</option>
+    <option value="downSyndrome">سمعية</option>
+    <option value="deaf">بصرية</option>
+	  <option value="deaf">حركية</option>
   </select>
 	</div>
 			
   
   
-			<button type="submit" name="signup">Create</button>
+			<button type="submit" name="signup">تسجيل</button>
 		</form>
 	</div>
 	<div class="form-container sign-in-container">
@@ -119,7 +79,7 @@ margin-left: 8px;" ><a href="login.php">العربية</a></li>
 		
 			
 			
-			<h1>Log in</h1>
+			<h1>تسجيل الدخول</h1>
 			<?php
 		 require_once 'DbConnect.php';
 				
@@ -155,7 +115,7 @@ margin-left: 8px;" ><a href="login.php">العربية</a></li>
 					if($stmt->num_rows > 0){
 						//$response['error'] = true;
 					//	$response['message'] = 'User already registered';
-					 echo 'sorry, email is registered before, ';
+					 echo 'عفوا , البريد الالكتروني مسجل مسبقا ';
 						$stmt->close();
 					}else{
 						 
@@ -171,7 +131,7 @@ margin-left: 8px;" ><a href="login.php">العربية</a></li>
 							//$response['error'] = false; 
 						//	$response['message'] = 'User registered successfully'; 
 							//$response['user'] = $user; 
-							 echo 'Thank You.. You can Log in now ';
+							 echo 'شكرا لك, ييمكنك تسجيل الدخول الان ';
 						}
   
    
@@ -214,27 +174,40 @@ margin-left: 8px;" ><a href="login.php">العربية</a></li>
 					if($stmt->num_rows > 0){
 						
 						$_SESSION['userid'] =$fullNamee;
-						 echo '	Thank you ';
-					  header('Refresh: 2; URL = updateen.php');
+						 echo 'أهلا بعودتك  سيتم الانتقال للصفحة الرئيسية ';
+					  header('Refresh: 2; URL = index.php');
 						$stmt->close();
 					}else{
 						 
-						 echo 'Sorry. email or password is incorrect ';
+						 echo 'عفوا , البريد الالكتروني أو كلمة السر غير صحيحة  ';
   
    
 				   
 				   
+				   
+				   
 				
+              // if ($_POST['email2'] == 'student' && 
+             //     $_POST['password2'] == '1234') {
+             //     $_SESSION['valid'] = true;
+             //     $_SESSION['timeout'] = time();
+             //     $_SESSION['email2'] = 'student';
+                  
+            //      echo 'nice';
+           //    }else {
+			//	    echo 'Wrong ';
+                 
+           //    }
 			   }}
 			
 			
 			
          ?>
 			
-			<input type="text" placeholder="Email" name="email1" required />
-			<input type="password" placeholder="Password" name="password1" required />
+			<input type="text" placeholder="البريد الالكتروني" name="email1" required />
+			<input type="password" placeholder="كلمة السر" name="password1" required />
 			
-			<button type="submit" onclick="hh()" name="login">Log in</button>
+			<button type="submit" onclick="hh()" name="login">دخول</button>
 		</form>
 	</div>
 	<div class="overlay-container">
@@ -243,13 +216,13 @@ margin-left: 8px;" ><a href="login.php">العربية</a></li>
     background-repeat: no-repeat;
     background-size: cover;">
 			
-				<button class="ghost" id="signIn">Log in</button>
+				<button class="ghost" id="signIn">تسجيل الدخول</button>
 			</div>
 			<div class="overlay-panel overlay-right" style="background-image: url(log.png);
     background-repeat: no-repeat;
     background-size: cover;">
 			
-				<button class="ghost" id="signUp">Create Account</button>
+				<button class="ghost" id="signUp">انشاء حساب</button>
 			</div>
 		</div>
 	</div>

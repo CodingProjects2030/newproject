@@ -13,7 +13,7 @@ else
 <html lang="en-US">
   <meta charset="UTF-8">
 <head>
- <title>إعاقتي بداية نجاحي</title>
+ <title></title>
   <link href="csStu.css" rel="stylesheet">
   <link href="Student.css?session=7" rel="stylesheet">
    <link href="csen.css?=version=7" rel="stylesheet">
@@ -65,7 +65,7 @@ border-radius: 20px;
 <div class="top">
 <ul>
  
-  <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
+  <li class="h"><a href="indexen.php"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
  
     <?php
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
@@ -98,8 +98,8 @@ margin-left: 8px;" ><a href="healthservices.php">Health Services</a></li>
 
  <li class="hh" style="
 margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Education Services <div class="dropdown-content">
-    <a href="educationalservices.php?id=1">English</a>
-    <a href="educationalservices.php?id=2">Information Technology</a>
+    <a href="educationalservicesen.php?id=1">English</a>
+    <a href="educationalservicesen.php?id=2">Information Technology</a>
    
   </div></a></div></li>
 <li class="hh" style="border: 2px solid black;
@@ -165,9 +165,9 @@ $disability = $row["disability"]; }
 	<div class="tryy">
 	<label class="labeloption">Disability</label>
    <select style="height: 27px;" name="categoryOption" class="options"  class="arrtol">
-    <option value="downSyndrome">سمعية</option>
-    <option value="deaf">بصرية</option>
-	  <option value="deaf">حركية</option>
+     <option value="deafness">deafness</option>
+    <option value="visual">visual</option>
+	  <option value="mobility">mobility</option>
   </select>
 	</div>
 			
