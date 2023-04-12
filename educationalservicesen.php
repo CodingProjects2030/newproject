@@ -1,4 +1,14 @@
+<?php
+   session_start();
+   
+if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
 
+}
+else
+{  	 header('Refresh: 0; URL = login.php');
+}
+
+?>
 <!DOCTYPE>
 <html lang="en-US">
   <meta charset="UTF-8">
@@ -53,9 +63,9 @@ border-radius: 20px;
 <div class="top">
 <ul>
  
-  <li class="h"><a href="indexen.php"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
+  <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
  
-    <?php
+      <?php
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
 echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
@@ -73,6 +83,7 @@ else
 	
 }
 ?>
+
   <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
@@ -81,13 +92,13 @@ margin-left: 8px;" ><a href="parenten.php">Parents</a></li>
     <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="healthservices.php">Health Services</a></li>
+margin-left: 8px;" ><a href="healthservicesen.php">Health Services</a></li>
 	
 
  <li class="hh" style="
 margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Education Services <div class="dropdown-content">
-    <a href="educationalservicesen.php?id=1">English</a>
-    <a href="educationalservicesen.php?id=2">Information Technology</a>
+    <a href="educationalservices.php?id=1">English</a>
+    <a href="educationalservices.php?id=2">Information Technology</a>
    
   </div></a></div></li>
 <li class="hh" style="border: 2px solid black;
@@ -95,6 +106,8 @@ background-color: white;
 border-radius: 20px;
 margin-left: 8px;" ><a href="entertainmentservicesen.php">Entertainment Services</a></li>
 
+ 
+   
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
