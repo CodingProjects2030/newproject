@@ -102,10 +102,14 @@ margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Education 
     <a href="educationalservicesen.php?id=2">Information Technology</a>
    
   </div></a></div></li>
-<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="entertainmentservicesen.php">Entertainment Services</a></li>
+
+ <li class="hh" style="
+margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Entertainment Services <div class="dropdown-content">
+    <a href="entertainmentservicesen.php?id=1">Excersizes </a>
+    <a href="entertainmentservicesen.php?id=2">Stories</a>
+   
+   
+  </div></a></div></li>
 
    <li class="hh" style="border: 2px solid black;
 background-color: white;
