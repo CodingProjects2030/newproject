@@ -1,4 +1,14 @@
+<?php
+   session_start();
+   
+if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
 
+}
+else
+{  	 header('Refresh: 0; URL = login.php');
+}
+
+?>
 <!DOCTYPE>
 <html lang="en-US">
   <meta charset="UTF-8">

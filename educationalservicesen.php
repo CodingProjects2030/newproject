@@ -97,8 +97,10 @@ margin-left: 8px;" ><a href="healthservicesen.php">Health Services</a></li>
 
  <li class="hh" style="
 margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Education Services <div class="dropdown-content">
-    <a href="educationalservices.php?id=1">English</a>
-    <a href="educationalservices.php?id=2">Information Technology</a>
+    <a href="educationalservicesen.php?id=1">English</a>
+    <a href="educationalservicesen.php?id=2">Information Technology</a>
+   <a href="educationalservicesen.php?id=3">Sign Language</a>
+   
    
   </div></a></div></li>
 <li class="hh" style="border: 2px solid black;
@@ -129,6 +131,9 @@ if ($id==2)
 	if ($id==1)
 	
 	{ echo '<h1> Englsidh Courses </h1>';}
+	if ($id==3)
+	
+	{ echo '<h1> Sign language Courses </h1>';}
 	?>
 
 <div style=" width:80%; height:20%;float:left;margin-left:10%;border: 2px solid black;
@@ -163,10 +168,14 @@ font-size: 24px;">
 
 if ($id==2)
 	
-	{ echo 'Learn Excel First Course';}
+	{ echo 'Learn Excel  Course';}
 	if ($id==1)
 	
 	{ echo 'Learn English First Course';}
+	
+	if ($id==3)
+	
+	{ echo 'Learn Numbers Sign Language  Course';}
 	?>
 </div> 
 
@@ -176,10 +185,27 @@ height: 100%;
 float: left;
 font-size: 27px;
 margin-left: 5px;">
+
+
 <p class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a style="text-decoration:none;" href="education1en.php">Learn Now</a></p>
+margin-left: 8px;" ><a style="text-decoration:none;"
+
+<?php
+
+if ($id==2)
+	
+	{ echo 'href="education1en.php?id=2"';}
+	
+	
+if ($id==3)
+	
+	{ echo 'href="education1en.php?id=3"';}
+ 
+ 
+ ?>
+ >Learn Now</a></p>
 
 </div> 
 
@@ -219,10 +245,13 @@ font-size: 24px;">
 
 if ($id==2)
 	
-	{ echo 'Learn Excel Second Course';}
+	{ echo 'Learn Word  Course';}
 	if ($id==1)
 	
 	{ echo 'Learn English Second Course';}
+	if ($id==3)
+	
+	{ echo 'Learn Letters Sign Language  Course';}
 	?>
 	
 	</div> 
@@ -236,7 +265,24 @@ margin-left: 5px;">
 <p class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a style="text-decoration:none;" href="education1en.php">Learn Now</a></p>
+margin-left: 8px;" >
+
+<a style="text-decoration:none;"
+
+<?php
+
+if ($id==2)
+	
+	{ echo 'href="education1en.php?id=5"';}
+	
+	
+if ($id==3)
+	
+	{ echo 'href="education1en.php?id=4"';}
+ 
+ 
+ ?>
+ >Learn Now</a></p>
 
 </div> 
 

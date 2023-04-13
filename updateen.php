@@ -119,12 +119,12 @@ margin-left: 8px;" ><a href="update.php">العربية</a></li>
 
 <br>
 <!--<center id="formLog">-->
-<div class="containers" id="container" style="min-height: 715px;margin-top: 143px;margin-left: 25%;width:50%">
+<div class="containers" id="container" style="min-height: 715px;margin-top: 143px;margin-left: 10%;width:80%">
 	
 	
 	
 		<form role = "form"  id="arra" action="<?php echo htmlspecialchars($_SERVER['PHP_SELF']); 
-            ?>" method = "post" style="direction:ltr;">
+            ?>" method = "post" style="direction:ltr;text-align:left;">
 			
 				<h1>Update Information</h1>
 			<?php
@@ -144,27 +144,27 @@ $disability = $row["disability"]; }
 
 
 ?>
-			<input type="text" placeholder="<?php echo $fullname; ?>" name="fullname2" required />
-			<input type="text" placeholder="<?php echo $email; ?>"  name="email2" required />
-			<input type="password" placeholder="<?php echo $password; ?>" name="password2" required />
-			<input type="password" placeholder="password" name="password22" required />
-			<input type="text" placeholder="<?php echo $age; ?>" name="age2" required />
-			<input type="text" placeholder="<?php echo $weight; ?>" name="weight2" required />
-			<input type="text" placeholder="<?php echo $height; ?>" name="height2" required />
+			<label style="width:100%;">Full Name <input style="width:85%;float:right;" type="text" placeholder="<?php echo $fullname; ?>" name="fullname2" required /></label>
+			<label style="width:100%;">Email<input style="width:85%;float:right;" type="text" placeholder="<?php echo $email; ?>"  name="email2" required /></label>
+			<label style="width:100%;">Password<input style="width:85%;float:right;" type="password" placeholder="<?php echo $password; ?>" name="password2" required /></label>
+			<label style="width:100%;">Password<input style="width:85%;float:right;" type="password" placeholder="password" name="password22" required /></label>
+			<label style="width:100%;">Age<input style="width:85%;float:right;" type="text" placeholder="<?php echo $age; ?>" name="age2" required /></label>
+			<label style="width:100%;">Weight<input style="width:85%;float:right;" type="text" placeholder="<?php echo $weight; ?>" name="weight2" required /></label>
+			<label style="width:100%;">Height<input style="width:85%;float:right;" type="text" placeholder="<?php echo $height; ?>" name="height2" required /></label>
 			
 			
 			
 			<div class="tryy">
-			<label class="labeloption">Gender</label>
-			<select style="height: 27px;" name="genderOption" class="options" class="arrtol">
+			<label >Gender</label>
+			<select style="height: 27px;margin-left:110px;" name="genderOption" class="options" class="arrtol">
     <option  value="Female">Female</option>
     <option value="Male">Male</option>
 	
   </select>
   	</div>
 	<div class="tryy">
-	<label class="labeloption">Disability</label>
-   <select style="height: 27px;" name="categoryOption" class="options"  class="arrtol">
+	<label >Disability</label>
+   <select style="height: 27px;margin-left:83px;" name="categoryOption" class="options"  class="arrtol">
      <option value="deafness">deafness</option>
     <option value="visual">visual</option>
 	  <option value="mobility">mobility</option>
