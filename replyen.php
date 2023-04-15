@@ -16,7 +16,7 @@ else
  <title></title>
 
   <link href="Student.css?session=8" rel="stylesheet">
-   <link href="cs.css?=version=8" rel="stylesheet">
+   <link href="csen.css?=version=8" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
 <style>
 
@@ -79,7 +79,6 @@ border-radius: 20px;
 
 <div class="top">
 <ul>
- 
   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
  
     <?php
@@ -87,7 +86,7 @@ if(isset($_SESSION['health']) && !empty($_SESSION['health'])) {
 echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="signout.php">تسجيل الخروج</a></li>';
+margin-left: 8px;" ><a href="signout.php">Sign Out</a></li>';
 
 }
 else
@@ -104,9 +103,8 @@ else
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="healthadminen.php">English</a></li>
+margin-left: 8px;" ><a href="reply.php">العربية</a></li>
   
-   
 
 </ul>
 </div>
@@ -114,62 +112,92 @@ margin-left: 8px;" ><a href="healthadminen.php">English</a></li>
 <br>
 <center id="formLog">
 
+<div class="containers" id="container" style="min-height: 422px;margin-top: 15px;">
+	
+	
+	
+		
+			
+				<h1>Health Services</h1>
+			<?php
+ require_once 'DbConnect.php';
+$id=$_REQUEST['id'];
+$sel_query="Select * from health  where id ='".$id."'"; 
+$result = mysqli_query($conn,$sel_query);
+while($row = mysqli_fetch_assoc($result)) { ?>
+<?php  $question = $row["question"]; 
+}
+
+
+?>
+
+<p> Question <br>
+<?php 
+   echo $question; ?>       </p>
+   
+   <br>
+   
+		
+  
+  
+	
+	
+</div>
 
 
 <div class="containers" id="container" style="min-height: 453px;margin-top: 18px;">
 	
 	
 	
-	
+		<form style= "height:auto;" role = "form"  id="arra" action="" method = "post">
 			
-				<h1>الاستفسارات الحالية</h1>
+				<h1>Reply </h1>
+	
+			<textarea name="answer" rows="10" cols="90"> </textarea>
+			
+			<br>
+			
+		
+			
+  
+  
+			<button type="submit" name="signup">Send</button>
+			
+			<?php
+		
+         
+			
+			
+            
+			
+			if (isset($_POST['answer']) && !empty($_POST['answer'] ) 
+               ) {
 				
-				<?php
-
-						echo '<table>
-  <tr>
-    <th>السؤال</th>
-    <th>الجواب</th>
-	<th>رد</th></tr>';
-	 require_once 'DbConnect.php';
-						$sel_query="Select * from health  "; 
-$result = mysqli_query($conn,$sel_query);
-while($row = mysqli_fetch_assoc($result)) { ?>
-<?php 
-echo ' <tr>
-    <td>'; echo $row["question"];echo ' </td>
-    <td>'; echo $row["answer"]; echo'</td>';
-	
-	if ($row["answer"]=='لم تتم الاجابة بعد')
-	{echo'
-	  
-    <td><a href="reply.php?id='; echo $row["id"]; echo '">ارسال رد</a> </td>
-</tr>';}
-
-else{
-	
-	echo'
-	  
-    <td>تم الرد</a> </td>
-</tr>';}
-
- }
- echo'</table>';
+				  
+				   $answer=$_POST['answer']; 
+				  
+						$ins_query = "update  health  set answer = '$answer' where id = '$id'";
 						
-					
-					
-				$answer = 'لم تتم الاجابة بعد';		
-
-
-
-?>
+if (mysqli_query($conn,$ins_query))
 	
+	{echo "<div ><h3>Thanks</h3></div>";
+	 header('Refresh: 2; URL = healthadminen.php');}
+	else{die(mysql_error());}
+  
+   
+				   
+				   
+				   
 		
-		
+			   }
+			
+         ?>
+		</form>
 	
 	
 	
 </div>
+
 </center>
 
 

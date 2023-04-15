@@ -16,7 +16,7 @@ else
  <title></title>
 
   <link href="Student.css?session=8" rel="stylesheet">
-   <link href="cs.css?=version=8" rel="stylesheet">
+   <link href="csen.css?=version=8" rel="stylesheet">
   <script type="text/javascript" src="Student.js"></script>
 <style>
 
@@ -87,7 +87,7 @@ if(isset($_SESSION['health']) && !empty($_SESSION['health'])) {
 echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="signout.php">تسجيل الخروج</a></li>';
+margin-left: 8px;" ><a href="signout.php">Sign Out</a></li>';
 
 }
 else
@@ -104,7 +104,7 @@ else
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="healthadminen.php">English</a></li>
+margin-left: 8px;" ><a href="healthadmin.php">العربية</a></li>
   
    
 
@@ -122,15 +122,15 @@ margin-left: 8px;" ><a href="healthadminen.php">English</a></li>
 	
 	
 			
-				<h1>الاستفسارات الحالية</h1>
+				<h1>The Queries</h1>
 				
 				<?php
 
-						echo '<table>
+						echo '<table style="direction:ltr;">
   <tr>
-    <th>السؤال</th>
-    <th>الجواب</th>
-	<th>رد</th></tr>';
+    <th>Question</th>
+    <th>Answer</th>
+	<th>Reply</th></tr>';
 	 require_once 'DbConnect.php';
 						$sel_query="Select * from health  "; 
 $result = mysqli_query($conn,$sel_query);
@@ -143,14 +143,14 @@ echo ' <tr>
 	if ($row["answer"]=='لم تتم الاجابة بعد')
 	{echo'
 	  
-    <td><a href="reply.php?id='; echo $row["id"]; echo '">ارسال رد</a> </td>
+    <td><a href="replyen.php?id='; echo $row["id"]; echo '">Reply</a> </td>
 </tr>';}
 
 else{
 	
 	echo'
 	  
-    <td>تم الرد</a> </td>
+    <td>Done</a> </td>
 </tr>';}
 
  }

@@ -2,7 +2,7 @@
    session_start();
    
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
-
+$id = $_SESSION['userid'];
 }
 else
 {  	 header('Refresh: 0; URL = login.php');
@@ -115,64 +115,64 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 <div id="container" style="margin-top:100px;height:auto;margin-top: 122px;">
   
   <div id="container2" style="height:auto;text-align:right;    background-color: #d4e8d5;">
-  <form action="/action_page.php">
+ <form style= "height:auto;" role = "form"  id="arra" action="" method = "post">
  <p>:رأيك بالموقع بشكل عام</p>
  <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+  <input style="float:rihgt;" type="radio" id="html" name="q11" value="Excelent" checked>
   <br>
   <label for="css">جيد</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <input type="radio" id="css" name="q12" value="Good">
   <br>
   <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <input type="radio" id="javascript" name="q13" value="Bad">
   
 <br>  
 <p>:مدى استيعاب ابنك \ابنتك للخدمات التعليمية</p>
  <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+  <input style="float:rihgt;" type="radio" id="html" name="q21" value="Excelent" checked>
   <br>
   <label for="css">جيد</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <input type="radio" id="css" name="q22" value="Good">
   <br>
   <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <input type="radio" id="javascript" name="q23" value="Bad">
   
 <br>  
 <p>:مدى استفادة ابنك \ ابنتك من الخدمات التعليمية</p>
  <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+  <input style="float:rihgt;" type="radio" id="html" name="q31" value="Excelent" checked>
   <br>
   <label for="css">جيد</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <input type="radio" id="css" name="q32" value="Good">
   <br>
   <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <input type="radio" id="javascript" name="q33" value="Bad">
   
 <br> 
 <p>:هل الخدمات الترفيهية مناسبة لابنك \ ابنتك </p>
  <label for="html">مناسبة جدا</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+  <input style="float:rihgt;" type="radio" id="html" name="q41" value="HTML" checked>
   <br>
   <label for="css">نوعا ما</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <input type="radio" id="css" name="q42" value="CSS">
   <br>
   <label for="javascript">غير مناسبة</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <input type="radio" id="javascript" name="q43" value="JavaScript">
   
 <br> 
 <p>:مدى رضاكم عن الخدمات الصحية المقدمة </p>
 <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="fav_language" value="HTML">
+  <input style="float:rihgt;" type="radio" id="html" name="q51" value="Excelent" checked>
   <br>
   <label for="css">جيد</label>
-  <input type="radio" id="css" name="fav_language" value="CSS">
+  <input type="radio" id="css" name="q52" value="Good">
   <br>
   <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <input type="radio" id="javascript" name="q53" value="Bad">
   
 <br>
 <p>اذا كان لديك تعليق يرجى ذكره</p>
- <textarea  name="w3review" rows="4" cols="80"></textarea>
+ <textarea  name="feedback" rows="4" cols="80"></textarea>
  <br> 
 <br>  
 <button style="    margin-right: 46%;
@@ -186,38 +186,392 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 				
 
          
+			if (isset($_POST['q11']) || isset($_POST['q11']) ||  isset($_POST['q11']) 
+
+
+			) 
+                {
+					if (
+               isset($_POST['q21']) || isset($_POST['q22']) ||  isset($_POST['q23']) 
+			  
+
+
+			) 
+                {
+					if (
+			   isset($_POST['q31']) || isset($_POST['q32']) ||  isset($_POST['q33']) 
+		
+
+
+			) 
+                {
+					if (
+			   isset($_POST['q41']) || isset($_POST['q42']) ||  isset($_POST['q43']) 
+
+
+			) 
+                {
+					if (
+			   isset($_POST['q51']) || isset($_POST['q52']) ||  isset($_POST['q53']) 
+
+
+			) 
+                {
+					
+					
 			
+          
 			
-            
-			
-			if (isset($_POST['question']) && !empty($_POST['question']) 
+			if ( isset($_POST['q11'])
                ) {
 				  
 				  
-				   $question=$_POST['question']; 
-				  $answer = 'لم تتم الاجابة بعد';
+				  if ( isset($_POST['q21'])
+               ) {
+				  
+				   if ( isset($_POST['q31'])
+               ) {
+				  
+				   if ( isset($_POST['q41'])
+               ) {
+				  
+				   if ( isset($_POST['q51'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   if ( isset($_POST['q52'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q53'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+				  
+				  
+			   }//endq41
+			   
+			   if ( isset($_POST['q42'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q43'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+				  
+				  
+			   }//endq31
+			   
+			   if ( isset($_POST['q32'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q33'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+				  
+				  
+			   }////end q21
+			   
+			   if ( isset($_POST['q22'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q23'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   //
+			   
+				  
+				  
+				  
+			   }/////////endq11
+			   
+			   if ( isset($_POST['q12'])
+               ) {
+				  
+				  
+				  if ( isset($_POST['q21'])
+               ) {
+				  
+				   if ( isset($_POST['q31'])
+               ) {
+				  
+				   if ( isset($_POST['q41'])
+               ) {
+				  
+				   if ( isset($_POST['q51'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   if ( isset($_POST['q52'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q53'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+				  
+				  
+			   }//endq41
+			   
+			   if ( isset($_POST['q42'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q43'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+				  
+				  
+			   }//endq31
+			   
+			   if ( isset($_POST['q32'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q33'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+				  
+				  
+			   }////end q21
+			   
+			   if ( isset($_POST['q22'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q23'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   //
+			   
+				  
+				  
+				  
+			   }/////////endq12
+			   
+			   
+			   if ( isset($_POST['q13'])
+               ) {
+				  
+				  
+				  if ( isset($_POST['q21'])
+               ) {
+				  
+				   if ( isset($_POST['q31'])
+               ) {
+				  
+				   if ( isset($_POST['q41'])
+               ) {
+				  
+				   if ( isset($_POST['q51'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   if ( isset($_POST['q52'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q53'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+				  
+				  
+			   }//endq41
+			   
+			   if ( isset($_POST['q42'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q43'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+				  
+				  
+			   }//endq31
+			   
+			   if ( isset($_POST['q32'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q33'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+				  
+				  
+			   }////end q21
+			   
+			   if ( isset($_POST['q22'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   
+			   
+			   if ( isset($_POST['q23'])
+               ) {
+				  
+				  
+				  
+				  
+			   }
+			   //
+			   
+				  
+				  
+				  
+			   }/////////endq13
+			   
+				}
+			   else{echo'11111يرجى الاختيار';}  
+			   
+			   }
+			   else{echo'222222يرجى الاختيار';}
+			   
+			   }
+			   else{echo'3333333يرجى الاختيار';}
+			   
+			   }
+			   else{echo'4444444يرجى الاختيار';}
+			   
+			   }
+			   else{echo'555555يرجى الاختيار';}
+			   
+				  
+				  // $q11=$_POST['q11']; 
+				
  
-						$stmt = $conn->prepare("INSERT INTO health (userId, question,answer) VALUES (?,?,?)");
-						$stmt->bind_param("sss", $id, $question, $answer);
+					//	$stmt = $conn->prepare("INSERT INTO feedback (userId, q1,q2,q3,q3,q5,feedback) VALUES (?,?,?,?,?,?,?)");
+					//	$stmt->bind_param("sssssss", $id, $question, $answer);
 						
-						//if the user is successfully added to the database 
-						if($stmt->execute()){
-						$stmt->close();
+					//
+					//	if($stmt->execute()){
+					//	$stmt->close();
 							
-							//adding the user data in response 
-							//$response['error'] = false; 
-						//	$response['message'] = 'User registered successfully'; 
-							//$response['user'] = $user; 
-							 echo 'شكرا لك , لقد تم ارسال استفسارك بنجاح ';
-							  header('Refresh: 2; URL = healthservices.php');
-						}
+						
+						//	 echo 'شكرا لك , لقد تم ارسال استفسارك بنجاح ';
+						//	  header('Refresh: 2; URL = healthservices.php');
+						//}
   
    
 				   
 				   
 				   
 		
-			   }
+			 //  }
 			
          ?>
 		 
