@@ -75,17 +75,17 @@ else
 	
 }
 ?>
-
-<li class="hh" style="border: 2px solid black;
+ 
+ <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="aboutus.php">نبذة عنا</a></li>
+margin-left: 8px;" ><a href="index.php">الصفحة الرئيسية</a></li>
 
 
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="indexen.php">English</a></li>
+margin-left: 8px;" ><a href="aboutusen.php">English</a></li>
   
    
 
@@ -93,35 +93,7 @@ margin-left: 8px;" ><a href="indexen.php">English</a></li>
 </div>
 
 <br>
-<div id="container">
-  <div id="container2" style="width:50%;  height:409; 
-  background-image: url('imgs/1.jpg');
-  background-color: #cccccc;
-  height: 610;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;">
 
-
-
-
-<div class="wrap1" style="float: left;
-    margin-left: 0%;
-    align-items: center;
-    justify-content: center;
-    ">
-  <button class="button"onclick="window.location.href='login.php'" >المستخدمين</button>
-</div>
-<div class="wrap2">
-  <button class="button"onclick="window.location.href='loginadmin2.php'" >الادارة</button>
-</div>
-
-
-
-
-</div>
-</div>
 
 
 <div class="footer">
