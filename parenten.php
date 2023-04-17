@@ -2,7 +2,7 @@
    session_start();
    
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
-
+$id = $_SESSION['userid'];
 }
 else
 {  	 header('Refresh: 0; URL = login.php');
@@ -119,64 +119,65 @@ margin-left: 8px;" ><a href="parentar.php">العربية</a></li>
 <div id="container" style="margin-top:100px;height:auto;margin-top: 122px;">
   
   <div id="container2" style="height:auto;text-align:right;    background-color: #d4e8d5;">
-  <form action="/action_page.php" style="text-align:left;">
+ 
+  <form  role = "form"  id="arra" action="" method = "post" style="text-align:left;">
  <p>What is your opinion about this website:</p>
  <label for="html">Excelent</label>
-  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
+  <input style="float:left;" type="radio" id="html" name="q1" value="Excelent" checked>
   <br>
   <label for="css">Good</label>
-  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
+  <input style="float:left;" type="radio" id="css" name="q1" value="Good">
   <br>
   <label for="javascript">Bad</label>
-  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <input style="float:left;" type="radio" id="javascript" name="q1" value="Bad">
   
 <br>  
 <p>What is you child understanding from educational services:</p>
  <label for="html">Excelent</label>
-  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
+  <input style="float:left;" type="radio" id="html" name="q2" value="Excelent">
   <br>
   <label for="css">Good</label>
-  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
+  <input style="float:left;" type="radio" id="css" name="q2" value="Good">
   <br>
   <label for="javascript">Bad</label>
-  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <input style="float:left;" type="radio" id="javascript" name="q2" value="Bad">
   
 <br>  
 <p>What is you child benefit from educational services:</p>
  <label for="html">Excelent</label>
-  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
+  <input style="float:left;" type="radio" id="html" name="q3" value="Excelent">
   <br>
   <label for="css">Good</label>
-  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
+  <input style="float:left;" type="radio" id="css" name="q3" value="Good">
   <br>
   <label for="javascript">Bad</label>
-  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <input style="float:left;" type="radio" id="javascript" name="q3" value="Bad">
   
 <br> 
 <p>Is entertainment services are suitable for your child ? </p>
- <label for="html">Yes</label>
-  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
+ <label for="html">Excelent</label>
+  <input style="float:left;" type="radio" id="html" name="q4" value="Excelent">
   <br>
-  <label for="css">little</label>
-  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
+  <label for="css">Good</label>
+  <input style="float:left;" type="radio" id="css" name="q4" value="Good">
   <br>
-  <label for="javascript">No</label>
-  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <label for="javascript">Bad</label>
+  <input style="float:left;" type="radio" id="javascript" name="q4" value="Bad">
   
 <br> 
 <p>How satisfied are you with the health services provided? </p>
 <label for="html">Excelent</label>
-  <input style="float:left;" type="radio" id="html" name="fav_language" value="HTML">
+  <input style="float:left;" type="radio" id="html" name="q5" value="Excelent">
   <br>
   <label for="css">Good</label>
-  <input style="float:left;" type="radio" id="css" name="fav_language" value="CSS">
+  <input style="float:left;" type="radio" id="css" name="q5" value="Good">
   <br>
   <label for="javascript">Bad</label>
-  <input style="float:left;" type="radio" id="javascript" name="fav_language" value="JavaScript">
+  <input style="float:left;" type="radio" id="javascript" name="q5" value="Bad">
   
 <br>
 <p>If you have a comment please mention it</p>
- <textarea  name="w3review" rows="4" cols="80"></textarea>
+ <textarea  name="feedback" rows="4" cols="80"></textarea>
  <br> 
 <br>  
 <button style="    margin-right: 46%;
@@ -190,38 +191,66 @@ margin-left: 8px;" ><a href="parentar.php">العربية</a></li>
 				
 
          
-			
-			
-            
-			
-			if (isset($_POST['question']) && !empty($_POST['question']) 
-               ) {
+			if (isset($_POST['q1']) ) 
+
+                {
+					if (
+               isset($_POST['q2']) ) 
+			  
+
+                {
+					if (
+			   isset($_POST['q3']) ) 
+		
+                {
+					if (
+			   isset($_POST['q4']) ) 
+
+                {
+					if (
+			   isset($_POST['q5']) ) 
+
+                {
+					
+				
 				  
-				  
-				   $question=$_POST['question']; 
-				  $answer = 'لم تتم الاجابة بعد';
- 
-						$stmt = $conn->prepare("INSERT INTO health (userId, question,answer) VALUES (?,?,?)");
-						$stmt->bind_param("sss", $id, $question, $answer);
+				   $q1=$_POST['q1'];
+$q2=$_POST['q2'];
+$q3=$_POST['q3'];
+$q4=$_POST['q4'];
+$q5=$_POST['q5'];
+$feedback=$_POST['feedback'];				   
+				
+ $stmt = $conn->prepare("SELECT userId FROM feedback WHERE userId = ?");
+					$stmt->bind_param("s", $id);
+					$stmt->execute();
+					$stmt->store_result();
+					
+					//if the user already exist in the database 
+					if($stmt->num_rows > 0){
+						//$response['error'] = true;
+					//	$response['message'] = 'User already registered';
+					 echo '<h2 style="color:red;">Sorry, You already sent the feedback </h2>';
+						$stmt->close();
+					}else{
 						
-						//if the user is successfully added to the database 
+						
+					$stmt = $conn->prepare("INSERT INTO feedback (userId, q1,q2,q3,q4,q5,feedback) VALUES (?,?,?,?,?,?,?)");
+				$stmt->bind_param("sssssss", $id, $q1, $q2,$q3,$q4,$q5,$feedback);
+						
+					
 						if($stmt->execute()){
 						$stmt->close();
 							
-							//adding the user data in response 
-							//$response['error'] = false; 
-						//	$response['message'] = 'User registered successfully'; 
-							//$response['user'] = $user; 
-							 echo 'Thank you your comment has been sent ';
-							  header('Refresh: 2; URL = healthservices.php');
-						}
-  
-   
-				   
-				   
-				   
-		
-			   }
+						
+							 echo 'Thanks, Your feedback has been sent';
+						header('Refresh: 2; URL = parenten.php');}
+				  
+				  
+				}}}}}}
+			  
+			  
+			   
 			
          ?>
 		 

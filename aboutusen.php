@@ -41,6 +41,7 @@ border-radius: 20px;
   display: block;
 }
 
+<<<<<<< HEAD
 hr{
   width:19%;
   height:0px;
@@ -65,6 +66,8 @@ border-width: 4px;
 }
 
 
+=======
+>>>>>>> 3c4f6232f5cbe2c853705d3adffcfeac6cfdc5ee
 .dropdown-content a:hover {}
 
 .dropdown:hover .dropdown-content {display: block;position:fixed;}
@@ -116,6 +119,7 @@ margin-left: 8px;" ><a href="aboutus.php">العربيه</a></li>
 </ul>
 </div>
 
+<<<<<<< HEAD
 
 <h1 style="font-family:'Times New Roman', Times, serif; margin-top:190px;"> WHO ARE WE? </h1> 
 
@@ -132,6 +136,13 @@ margin-left: 8px;" ><a href="aboutus.php">العربيه</a></li>
 
   <div class="footer">
 &copy; INSISTENCE 2023
+=======
+<br>
+
+
+
+<div class="footer">
+>>>>>>> 3c4f6232f5cbe2c853705d3adffcfeac6cfdc5ee
 </div>
 
 <script>
