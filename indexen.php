@@ -57,32 +57,13 @@ border-radius: 20px;
  
   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
  
-    <?php
-if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
-echo '<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="signout.php">Sign Out</a></li>';
-echo '<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;"><a href="updateen.php">Update Info</a></li>';
-}
-else
-{   ?>
-	
-	<?php
-	
-}
-?>
-  
-
+   
   <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
 margin-left: 8px;" ><a href="aboutusen.php">About Us</a></li>
-
-
+  
+   
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;

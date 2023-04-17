@@ -198,12 +198,15 @@ margin-left: 8px;" ><a href="loginadmin2.php">العربية</a></li>
 					//if the user already exist in the database 
 					if($stmt->num_rows > 0){
 						
-						$_SESSION['health'] =$fullNamee;
+						
 						if($category1=='health')
 						{ echo '	Thank you ';
+					$_SESSION['health'] =$fullNamee;
 					  header('Refresh: 2; URL = healthadminen.php');}
 					  
-					  else{
+					  
+					  
+					  else{$_SESSION['admin'] =$fullNamee;
 						 echo '	Thank you ';
 					  header('Refresh: 2; URL = adminen.php');}
 						$stmt->close();

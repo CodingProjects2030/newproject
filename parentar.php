@@ -105,7 +105,7 @@ margin-left: 8px;" ><a href="entertainmentservices.php">الخدمات التر�
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="indexen.html">English</a></li>
+margin-left: 8px;" ><a href="parenten.php">English</a></li>
   
    
 
@@ -118,57 +118,58 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
  <form style= "height:auto;" role = "form"  id="arra" action="" method = "post">
  <p>:رأيك بالموقع بشكل عام</p>
  <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="q11" value="Excelent" checked>
+  <input style="float:rihgt;" type="radio" id="html" name="q1" value="Excelent" checked>
   <br>
   <label for="css">جيد</label>
-  <input type="radio" id="css" name="q12" value="Good">
+  <input type="radio" id="css" name="q1" value="Good">
   <br>
   <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="q13" value="Bad">
+  <input type="radio" id="javascript" name="q1" value="Bad">
   
 <br>  
 <p>:مدى استيعاب ابنك \ابنتك للخدمات التعليمية</p>
  <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="q21" value="Excelent" checked>
+  <input style="float:rihgt;" type="radio" id="html" name="q2" value="Excelent" checked>
   <br>
   <label for="css">جيد</label>
-  <input type="radio" id="css" name="q22" value="Good">
+  <input type="radio" id="css" name="q2" value="Good">
   <br>
   <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="q23" value="Bad">
+  <input type="radio" id="javascript" name="q2" value="Bad">
   
 <br>  
 <p>:مدى استفادة ابنك \ ابنتك من الخدمات التعليمية</p>
+
  <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="q31" value="Excelent" checked>
+  <input style="float:rihgt;" type="radio" id="html" name="q3" value="Excelent" checked>
   <br>
   <label for="css">جيد</label>
-  <input type="radio" id="css" name="q32" value="Good">
+  <input type="radio" id="css" name="q3" value="Good">
   <br>
   <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="q33" value="Bad">
+  <input type="radio" id="javascript" name="q3" value="Bad">
   
 <br> 
 <p>:هل الخدمات الترفيهية مناسبة لابنك \ ابنتك </p>
  <label for="html">مناسبة جدا</label>
-  <input style="float:rihgt;" type="radio" id="html" name="q41" value="HTML" checked>
+  <input style="float:rihgt;" type="radio" id="html" name="q4" value="Excelent" checked>
   <br>
   <label for="css">نوعا ما</label>
-  <input type="radio" id="css" name="q42" value="CSS">
+  <input type="radio" id="css" name="q4" value="Good">
   <br>
   <label for="javascript">غير مناسبة</label>
-  <input type="radio" id="javascript" name="q43" value="JavaScript">
+  <input type="radio" id="javascript" name="q4" value="Bad">
   
 <br> 
 <p>:مدى رضاكم عن الخدمات الصحية المقدمة </p>
 <label for="html">ممتاز</label>
-  <input style="float:rihgt;" type="radio" id="html" name="q51" value="Excelent" checked>
+  <input style="float:rihgt;" type="radio" id="html" name="q5" value="Excelent" checked>
   <br>
   <label for="css">جيد</label>
-  <input type="radio" id="css" name="q52" value="Good">
+  <input type="radio" id="css" name="q5" value="Good">
   <br>
   <label for="javascript">سيء</label>
-  <input type="radio" id="javascript" name="q53" value="Bad">
+  <input type="radio" id="javascript" name="q5" value="Bad">
   
 <br>
 <p>اذا كان لديك تعليق يرجى ذكره</p>
@@ -186,392 +187,66 @@ margin-left: 8px;" ><a href="indexen.html">English</a></li>
 				
 
          
-			if (isset($_POST['q11']) || isset($_POST['q11']) ||  isset($_POST['q11']) 
+			if (isset($_POST['q1']) ) 
 
-
-			) 
                 {
 					if (
-               isset($_POST['q21']) || isset($_POST['q22']) ||  isset($_POST['q23']) 
+               isset($_POST['q2']) ) 
 			  
 
-
-			) 
                 {
 					if (
-			   isset($_POST['q31']) || isset($_POST['q32']) ||  isset($_POST['q33']) 
+			   isset($_POST['q3']) ) 
 		
-
-
-			) 
                 {
 					if (
-			   isset($_POST['q41']) || isset($_POST['q42']) ||  isset($_POST['q43']) 
+			   isset($_POST['q4']) ) 
 
-
-			) 
                 {
 					if (
-			   isset($_POST['q51']) || isset($_POST['q52']) ||  isset($_POST['q53']) 
+			   isset($_POST['q5']) ) 
 
-
-			) 
                 {
 					
-					
-			
-          
-			
-			if ( isset($_POST['q11'])
-               ) {
-				  
-				  
-				  if ( isset($_POST['q21'])
-               ) {
-				  
-				   if ( isset($_POST['q31'])
-               ) {
-				  
-				   if ( isset($_POST['q41'])
-               ) {
-				  
-				   if ( isset($_POST['q51'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   if ( isset($_POST['q52'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q53'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-				  
-				  
-			   }//endq41
-			   
-			   if ( isset($_POST['q42'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q43'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-				  
-				  
-			   }//endq31
-			   
-			   if ( isset($_POST['q32'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q33'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-				  
-				  
-			   }////end q21
-			   
-			   if ( isset($_POST['q22'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q23'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   //
-			   
-				  
-				  
-				  
-			   }/////////endq11
-			   
-			   if ( isset($_POST['q12'])
-               ) {
-				  
-				  
-				  if ( isset($_POST['q21'])
-               ) {
-				  
-				   if ( isset($_POST['q31'])
-               ) {
-				  
-				   if ( isset($_POST['q41'])
-               ) {
-				  
-				   if ( isset($_POST['q51'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   if ( isset($_POST['q52'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q53'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-				  
-				  
-			   }//endq41
-			   
-			   if ( isset($_POST['q42'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q43'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-				  
-				  
-			   }//endq31
-			   
-			   if ( isset($_POST['q32'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q33'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-				  
-				  
-			   }////end q21
-			   
-			   if ( isset($_POST['q22'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q23'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   //
-			   
-				  
-				  
-				  
-			   }/////////endq12
-			   
-			   
-			   if ( isset($_POST['q13'])
-               ) {
-				  
-				  
-				  if ( isset($_POST['q21'])
-               ) {
-				  
-				   if ( isset($_POST['q31'])
-               ) {
-				  
-				   if ( isset($_POST['q41'])
-               ) {
-				  
-				   if ( isset($_POST['q51'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   if ( isset($_POST['q52'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q53'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-				  
-				  
-			   }//endq41
-			   
-			   if ( isset($_POST['q42'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q43'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-				  
-				  
-			   }//endq31
-			   
-			   if ( isset($_POST['q32'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q33'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-				  
-				  
-			   }////end q21
-			   
-			   if ( isset($_POST['q22'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   
-			   
-			   if ( isset($_POST['q23'])
-               ) {
-				  
-				  
-				  
-				  
-			   }
-			   //
-			   
-				  
-				  
-				  
-			   }/////////endq13
-			   
-				}
-			   else{echo'11111يرجى الاختيار';}  
-			   
-			   }
-			   else{echo'222222يرجى الاختيار';}
-			   
-			   }
-			   else{echo'3333333يرجى الاختيار';}
-			   
-			   }
-			   else{echo'4444444يرجى الاختيار';}
-			   
-			   }
-			   else{echo'555555يرجى الاختيار';}
-			   
-				  
-				  // $q11=$_POST['q11']; 
 				
- 
-					//	$stmt = $conn->prepare("INSERT INTO feedback (userId, q1,q2,q3,q3,q5,feedback) VALUES (?,?,?,?,?,?,?)");
-					//	$stmt->bind_param("sssssss", $id, $question, $answer);
+				  
+				   $q1=$_POST['q1'];
+$q2=$_POST['q2'];
+$q3=$_POST['q3'];
+$q4=$_POST['q4'];
+$q5=$_POST['q5'];
+$feedback=$_POST['feedback'];				   
+				
+ $stmt = $conn->prepare("SELECT userId FROM feedback WHERE userId = ?");
+					$stmt->bind_param("s", $id);
+					$stmt->execute();
+					$stmt->store_result();
+					
+					//if the user already exist in the database 
+					if($stmt->num_rows > 0){
+						//$response['error'] = true;
+					//	$response['message'] = 'User already registered';
+					 echo '<h2 style="color:red;">عفوا لقد تم ارسال تقييمك سابقا </h2>';
+						$stmt->close();
+					}else{
 						
-					//
-					//	if($stmt->execute()){
-					//	$stmt->close();
+						
+					$stmt = $conn->prepare("INSERT INTO feedback (userId, q1,q2,q3,q4,q5,feedback) VALUES (?,?,?,?,?,?,?)");
+				$stmt->bind_param("sssssss", $id, $q1, $q2,$q3,$q4,$q5,$feedback);
+						
+					
+						if($stmt->execute()){
+						$stmt->close();
 							
 						
-						//	 echo 'شكرا لك , لقد تم ارسال استفسارك بنجاح ';
-						//	  header('Refresh: 2; URL = healthservices.php');
-						//}
-  
-   
-				   
-				   
-				   
-		
-			 //  }
+							 echo 'شكرا لك , لقد تم ارسال تقييمك بنجاح';
+						header('Refresh: 2; URL = parentar.php');}
+				  
+				  
+				}}}}}}
+			  
+			  
+			   
 			
          ?>
 		 
