@@ -41,6 +41,29 @@ border-radius: 20px;
   display: block;
 }
 
+hr{
+  width:19%;
+  height:0px;
+  margin-right: auto;
+margin-left: auto;
+margin-top: 100px;
+margin-bottom: 10px;
+border-width: 4px;
+}
+
+p{
+font-family:'Times New Roman', Times, serif;
+  text-align:right;
+  direction:rtl;
+ font-size:20px;
+  width:75%;
+  margin-right: auto;
+margin-left: auto;
+margin-top: 80px;
+margin-bottom: 10px;
+border-width: 4px;
+}
+
 .dropdown-content a:hover {}
 
 .dropdown:hover .dropdown-content {display: block;position:fixed;}
@@ -75,53 +98,33 @@ else
 	
 }
 ?>
-
-<li class="hh" style="border: 2px solid black;
+ 
+ <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="aboutus.php">نبذة عنا</a></li>
+margin-left: 8px;" ><a href="index.php">الصفحة الرئيسية</a></li>
 
 
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="indexen.php">English</a></li>
+margin-left: 8px;" ><a href="aboutusen.php">English</a></li>
   
    
 
 </ul>
 </div>
 
-<br>
-<div id="container">
-  <div id="container2" style="width:50%;  height:409; 
-  background-image: url('imgs/1.jpg');
-  background-color: #cccccc;
-  height: 610;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;">
 
+<h1 style="font-family:'Times New Roman', Times, serif; margin-top:190px;"> من نحن؟  </h1> 
 
+<hr style="margin-top:1px;"> </hr>
 
+<p> موقع الكتروني يساهم في تقديم خدمات الكترونية مختلفة للأبطال ذوي الهمم. موقعنا يقدم الخدمات التعليمية والترفيهية والصحية بشكل بسيط ومفهوم 
+  لمختلف الأعمار. ويساعد ايضا ولي أمر الأبطال ان يسجلو تجربتهم وتقييمهم عن ابنائهم. </p>
 
-<div class="wrap1" style="float: left;
-    margin-left: 0%;
-    align-items: center;
-    justify-content: center;
-    ">
-  <button class="button"onclick="window.location.href='login.php'" >المستخدمين</button>
-</div>
-<div class="wrap2">
-  <button class="button"onclick="window.location.href='loginadmin2.php'" >الادارة</button>
-</div>
+  <p> يهدف موقعنا ان يساعد في سد احتياج طبقة كبيره من المجتمع وهم ذوي الهمم الابطال. </p>
 
-
-
-
-</div>
-</div>
 
 
 <div class="footer">

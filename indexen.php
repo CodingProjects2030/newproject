@@ -75,27 +75,13 @@ else
 	
 }
 ?>
+  
+
   <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="parenten.php">Parents</a></li>
-  
-    <li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="healthservices.php">Health Services</a></li>
-	
+margin-left: 8px;" ><a href="aboutusen.php">About Us</a></li>
 
- <li class="hh" style="
-margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Education Services <div class="dropdown-content">
-    <a href="educationalservices.php?id=1">English</a>
-    <a href="educationalservices.php?id=2">Information Technology</a>
-   
-  </div></a></div></li>
-<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="entertainmentservicesen.php">Entertainment Services</a></li>
 
    <li class="hh" style="border: 2px solid black;
 background-color: white;
@@ -140,6 +126,7 @@ margin-left: 8px;" ><a href="index.php">العربية</a></li>
 
 
 <div class="footer">
+&copy; INSISTENCE 2023
 </div>
 
 <script>
