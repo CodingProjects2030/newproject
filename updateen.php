@@ -85,6 +85,7 @@ else
 	
 }
 ?>
+  
   <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
@@ -100,17 +101,22 @@ margin-left: 8px;" ><a href="healthservicesen.php">Health Services</a></li>
 margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Education Services <div class="dropdown-content">
     <a href="educationalservicesen.php?id=1">English</a>
     <a href="educationalservicesen.php?id=2">Information Technology</a>
+   <a href="educationalservicesen.php?id=3">Sign Language</a>
+   
    
   </div></a></div></li>
-
- <li class="hh" style="
+<li class="hh" style="
 margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">Entertainment Services <div class="dropdown-content">
     <a href="entertainmentservicesen.php?id=1">Excersizes </a>
     <a href="entertainmentservicesen.php?id=2">Stories</a>
    
    
   </div></a></div></li>
-
+   
+   <li class="hh" style="border: 2px solid black;
+background-color: white;
+border-radius: 20px;
+margin-left: 8px;" ><a href="aboutusen.php">About Us</a></li>
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
@@ -160,7 +166,7 @@ $disability = $row["disability"]; }
 			
 			<div class="tryy">
 			<label >Gender</label>
-			<select style="height: 27px;margin-left:110px;" name="genderOption" class="options" class="arrtol">
+			<select style="height: 27px;margin-left:156px;" name="genderOption" class="options" class="arrtol">
     <option  value="Female">Female</option>
     <option value="Male">Male</option>
 	
@@ -168,7 +174,7 @@ $disability = $row["disability"]; }
   	</div>
 	<div class="tryy">
 	<label >Disability</label>
-   <select style="height: 27px;margin-left:83px;" name="categoryOption" class="options"  class="arrtol">
+   <select style="height: 27px;margin-left:128px;" name="categoryOption" class="options"  class="arrtol">
      <option value="deafness">deafness</option>
     <option value="visual">visual</option>
 	  <option value="mobility">mobility</option>

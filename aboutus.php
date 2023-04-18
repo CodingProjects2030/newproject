@@ -6,7 +6,7 @@
   <meta charset="UTF-8">
 <head>
  <title>تقنيات ووسائل لدعم أصحاب الهمم العاليه</title>
- <link href="cs.css?=version=9" rel="stylesheet">
+ <link href="cs.css?=version=11" rel="stylesheet">
 
 <style>
 .dropbtn {
@@ -41,7 +41,7 @@ border-radius: 20px;
   display: block;
 }
 
-<<<<<<< HEAD
+
 hr{
   width:19%;
   height:0px;
@@ -66,7 +66,7 @@ border-width: 4px;
 }
 
 =======
->>>>>>> 3c4f6232f5cbe2c853705d3adffcfeac6cfdc5ee
+
 .dropdown-content a:hover {}
 
 .dropdown:hover .dropdown-content {display: block;position:fixed;}
@@ -118,7 +118,7 @@ margin-left: 8px;" ><a href="aboutusen.php">English</a></li>
 </ul>
 </div>
 
-<<<<<<< HEAD
+
 
 <h1 style="font-family:'Times New Roman', Times, serif; margin-top:190px;"> من نحن؟  </h1> 
 
@@ -128,17 +128,15 @@ margin-left: 8px;" ><a href="aboutusen.php">English</a></li>
   لمختلف الأعمار. ويساعد ايضا ولي أمر الأبطال ان يسجلو تجربتهم وتقييمهم عن ابنائهم. </p>
 
   <p> يهدف موقعنا ان يساعد في سد احتياج طبقة كبيره من المجتمع وهم ذوي الهمم الابطال. </p>
-=======
+
 <br>
->>>>>>> 3c4f6232f5cbe2c853705d3adffcfeac6cfdc5ee
 
 
 
 <div class="footer">
-<<<<<<< HEAD
+ 
 &copy; INSISTENCE 2023
 =======
->>>>>>> 3c4f6232f5cbe2c853705d3adffcfeac6cfdc5ee
 </div>
 
 <script>

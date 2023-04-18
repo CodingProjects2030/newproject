@@ -5,8 +5,8 @@
 <html lang="en-US">
   <meta charset="UTF-8">
 <head>
- <title>تقنيات ووسائل لدعم أصحاب الهمم العاليه</title>
- <link href="cs.css?=version=9" rel="stylesheet">
+ <title></title>
+ <link href="csen.css?=version=10" rel="stylesheet">
 
 <style>
 .dropbtn {
@@ -41,7 +41,7 @@ border-radius: 20px;
   display: block;
 }
 
-<<<<<<< HEAD
+
 hr{
   width:19%;
   height:0px;
@@ -54,8 +54,8 @@ border-width: 4px;
 
 p{
 font-family:'Times New Roman', Times, serif;
-  text-align:right;
-  direction:rtl;
+  text-align:left;
+  direction:ltr;
  font-size:20px;
   width:75%;
   margin-right: auto;
@@ -67,7 +67,7 @@ border-width: 4px;
 
 
 =======
->>>>>>> 3c4f6232f5cbe2c853705d3adffcfeac6cfdc5ee
+
 .dropdown-content a:hover {}
 
 .dropdown:hover .dropdown-content {display: block;position:fixed;}
@@ -84,16 +84,16 @@ border-width: 4px;
  
   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
  
-    <?php
+     <?php
 if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
 echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="signout.php">تسجيل الخروج</a></li>';
+margin-left: 8px;" ><a href="signout.php">Sign Out</a></li>';
 echo '<li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;"><a href="update.php">تحديث البيانات</a></li>';
+margin-left: 8px;"><a href="updateen.php">Update Info</a></li>';
 }
 else
 {   ?>
@@ -142,7 +142,7 @@ margin-left: 8px;" ><a href="aboutus.php">العربيه</a></li>
 
 
 <div class="footer">
->>>>>>> 3c4f6232f5cbe2c853705d3adffcfeac6cfdc5ee
+
 </div>
 
 <script>

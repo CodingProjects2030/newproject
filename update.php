@@ -144,27 +144,27 @@ $disability = $row["disability"]; }
 
 
 ?>
-			<input type="text" placeholder="<?php echo $fullname; ?>" name="fullname2" required />
-			<input type="text" placeholder="<?php echo $email; ?>"  name="email2" required />
-			<input type="password" placeholder="<?php echo $password; ?>" name="password2" required />
-			<input type="password" placeholder="اعادة كلمة المرور" name="password22" required />
-			<input type="text" placeholder="<?php echo $age; ?>" name="age2" required />
-			<input type="text" placeholder="<?php echo $weight; ?>" name="weight2" required />
-			<input type="text" placeholder="<?php echo $height; ?>" name="height2" required />
+			<label style="width:100%;">الاسم <input style="width:85%;float:left;" type="text" placeholder="<?php echo $fullname; ?>" name="fullname2" required /></label>
+			<label style="width:100%;">الايميل<input style="width:85%;float:left;" type="text" placeholder="<?php echo $email; ?>"  name="email2" required /></label>
+			<label style="width:100%;">كلمة المرور<input style="width:85%;float:left;" type="password" placeholder="<?php echo $password; ?>" name="password2" required /></label>
+			<label style="width:100%;">كلمة المرور<input style="width:85%;float:left;" type="password" placeholder="password" name="password22" required /></label>
+			<label style="width:100%;">العمر<input style="width:85%;float:left;" type="text" placeholder="<?php echo $age; ?>" name="age2" required /></label>
+			<label style="width:100%;">الوزن<input style="width:85%;float:left;" type="text" placeholder="<?php echo $weight; ?>" name="weight2" required /></label>
+			<label style="width:100%;">الطول<input style="width:85%;float:left;" type="text" placeholder="<?php echo $height; ?>" name="height2" required /></label>
 			
 			
 			
 			<div class="tryy">
-			<label class="labeloption">الجنس</label>
-			<select style="height: 27px;" name="genderOption" class="options" class="arrtol">
+			<label >الجنس</label>
+			<select style="height: 27px;margin-right:84px;" name="genderOption" class="options" class="arrtol">
     <option  value="Female">انثى</option>
     <option value="Male">ذكر</option>
 	
   </select>
   	</div>
 	<div class="tryy">
-	<label class="labeloption">الاعاقة</label>
-   <select style="height: 27px;" name="categoryOption" class="options"  class="arrtol">
+	<label >الاعاقة</label>
+   <select style="height: 27px;margin-right:84px;" name="categoryOption" class="options"  class="arrtol">
     <option value="downSyndrome">سمعية</option>
     <option value="deaf">بصرية</option>
 	  <option value="deaf">حركية</option>

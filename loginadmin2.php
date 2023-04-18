@@ -55,32 +55,13 @@ border-radius: 20px;
 
 <div class="top">
 <ul>
+   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
  
-  <li class="h"><a href="index.php"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
- 
-    <?php
-if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
-echo '<li class="hh" style="border: 2px solid black;
+   
+  <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="signout.php">تسجيل الخروج</a></li>';
-echo '<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;"><a href="update.php">تحديث البيانات</a></li>';
-echo '<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;"><a href="parentar.php">ولي الامر</a></li>';
-}
-else
-{   ?>
-	
-	<?php
-	
-}
-?>
-
+margin-left: 8px;" ><a href="aboutus.php">من نحن</a></li>
   
   
  

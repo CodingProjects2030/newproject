@@ -55,18 +55,19 @@ border-radius: 20px;
 
 <div class="top">
 <ul>
+   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
  
-  <li class="h"><a href="indexen.php"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
-
-
-  
- 
-    <li class="hh" style="border: 2px solid black;
+   
+  <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="login.php">العربية</a></li>
+margin-left: 8px;" ><a href="aboutusen.php">About Us</a></li>
   
    
+   <li class="hh" style="border: 2px solid black;
+background-color: white;
+border-radius: 20px;
+margin-left: 8px;" ><a href="index.php">العربية</a></li>
 
 </ul>
 </div>

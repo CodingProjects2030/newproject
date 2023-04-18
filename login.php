@@ -55,54 +55,19 @@ border-radius: 20px;
 
 <div class="top">
 <ul>
+   <li class="h"><a href="#about"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
  
-  <li class="h"><a href="index.php"><img src="imgs/logo.png" height="120" width="230"></a></li><br><br>
- 
-    <?php
-if(isset($_SESSION['userid']) && !empty($_SESSION['userid'])) {
-echo '<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="signout.php">تسجيل الخروج</a></li>';
-echo '<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;"><a href="update.php">تحديث البيانات</a></li>';
-echo '<li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;"><a href="parentar.php">ولي الامر</a></li>';
-}
-else
-{   ?>
-	
-	<?php
-	
-}
-?>
-
-  
-    <li class="hh" style="border: 2px solid black;
-background-color: white;
-border-radius: 20px;
-margin-left: 8px;" ><a href="healthservices.php">الخدمات الصحية</a></li>
-	 <li class="hh" style="
-margin-left: 8px;" ><div class="dropdown"> <a class="dropbtn" href="">الخدمات التعليمية <div class="dropdown-content">
-    <a href="educationalservices.php?id=1">اللغة الانجليزية</a>
-    <a href="educationalservices.php?id=2">تقنية معلومات</a>
    
-  </div></a></div></li>
-
- <li class="hh" style="border: 2px solid black;
+  <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="entertainmentservices.php">الخدمات الترفيهية</a></li>
-
+margin-left: 8px;" ><a href="aboutus.php">من نحن</a></li>
+  
+   
    <li class="hh" style="border: 2px solid black;
 background-color: white;
 border-radius: 20px;
-margin-left: 8px;" ><a href="indexen.html">English</a></li>
-  
+margin-left: 8px;" ><a href="indexen.php">English</a></li>
    
 
 </ul>
