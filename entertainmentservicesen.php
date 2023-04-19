@@ -155,7 +155,7 @@ if ($id==2)
 	{ echo '<img style="margin-top: 5px;" src="imgs/Ex1.png" height="90%" width="90%">';}
 	if ($id==1)
 	
-	{ echo '<img style="margin-top: 5px;" src="imgs/ENG1.jpg" height="90%" width="90%">';}
+	{ echo '<img style="margin-top: 5px;" src="imgs/e1.jpg" height="90%" width="90%">';}
 	?>
 	
 	

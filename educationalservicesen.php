@@ -154,10 +154,14 @@ float: right;">
 
 if ($id==2)
 	
-	{ echo '<img style="margin-top: 5px;" src="imgs/Ex1.png" height="90%" width="90%">';}
+	{ echo '<img style="margin-top: 5px;" src="imgs/ex1.png" height="90%" width="90%">';}
 	if ($id==1)
 	
 	{ echo '<img style="margin-top: 5px;" src="imgs/ENG1.jpg" height="90%" width="90%">';}
+
+	if ($id==3)
+	
+	{ echo '<img style="margin-top: 5px;" src="imgs/numsign.jpg" height="90%" width="90%">';}
 	?>
 	
 	
@@ -232,10 +236,14 @@ float: right;">
 
 if ($id==2)
 	
-	{ echo '<img style="margin-top: 5px;" src="imgs/Ex1.png" height="90%" width="90%">';}
+	{ echo '<img style="margin-top: 5px;" src="imgs/word.jpg" height="90%" width="90%">';}
 	if ($id==1)
 	
 	{ echo '<img style="margin-top: 5px;" src="imgs/ENG2.jpg" height="90%" width="90%">';}
+
+	if ($id==3)
+	
+	{ echo '<img style="margin-top: 5px;" src="imgs/lettersign.jpg" height="90%" width="90%">';}
 	?>
 
 </div> 
