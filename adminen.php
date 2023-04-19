@@ -177,7 +177,7 @@ echo ' <tr>
 	
 	echo '
     <td>'; echo $countmale;echo ' </td>
-    <td>'; echo $countvisual; echo'</td>';
+    <td>'; echo $countdeafnes; echo'</td>';
 	
 	echo ' 
     <td>'; echo $countvisual;echo ' </td>

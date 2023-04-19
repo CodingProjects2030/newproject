@@ -152,7 +152,7 @@ float: right;">
 
 if ($id==2)
 	
-	{ echo '<img style="margin-top: 5px;" src="imgs/Ex1.png" height="90%" width="90%">';}
+	{ echo '<img style="margin-top: 5px;" src="imgs/st.png" height="90%" width="90%">';}
 	if ($id==1)
 	
 	{ echo '<img style="margin-top: 5px;" src="imgs/e1.jpg" height="90%" width="90%">';}
@@ -230,10 +230,10 @@ float: right;">
 
 if ($id==2)
 	
-	{ echo '<img style="margin-top: 5px;" src="imgs/Ex1.png" height="90%" width="90%">';}
+	{ echo '<img style="margin-top: 5px;" src="imgs/st.png" height="90%" width="90%">';}
 	if ($id==1)
 	
-	{ echo '<img style="margin-top: 5px;" src="imgs/ENG2.jpg" height="90%" width="90%">';}
+	{ echo '<img style="margin-top: 5px;" src="imgs/e1.jpg" height="90%" width="90%">';}
 	?>
 
 </div> 

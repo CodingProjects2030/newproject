@@ -206,27 +206,27 @@ Doing sports on a regular basis, as it strengthens the muscles, increases appeti
 
   <?php if ($bmi >=18.5 && $bmi <25) {echo '
    
-    وزنك طبيعي، تحتاج للمحافظة عليه في المعدل الطبيعي لاتباع النصائح التالية:';echo '<br>'; echo'
+    Your weight is normal, you need to maintain it in the normal range by following the following tips:';echo '<br>'; echo'
 
-اذا كنت تريد المحافظة على وزنك فعليك أن تتبع نظام صحي طويل الأمد يمزج بين الاختيارات الذكية للطعام والتحرك أكثر.';echo '<br>'; echo'
+If you want to maintain your weight, you must follow a healthy, long-term diet that combines smart food choices with moving more.';echo '<br>'; echo'
 
-عدم إلغاء أي وجبة من الوجبات الرئيسية وتناول الوجبات في مواعيد ثابتة ومنتظمة';echo '<br>'; echo'
+Do not cancel any of the main meals and eat meals at fixed and regular times';echo '<br>'; echo'
 
-تناول أغذية مختلفة ومتنوعة وبالكميات الصحيحة الموصى بها كما في الهرم الغذائي';echo '<br>'; echo'
+Eat different and varied foods and in the right quantities recommended as in the food pyramid';echo '<br>'; echo'
 
-التقليل من تناول الأطعمة السكرية والمقلية والمشروبات الغازية.';echo '<br>'; echo'
+Reducing the intake of sugary and fried foods and soft drinks.';echo '<br>'; echo'
 
-التقليل من إضافة الملح للطعام والأغذية المعلبة.';echo '<br>'; echo'
+Reducing the addition of salt to food and canned food.';echo '<br>'; echo'
 
-التقليل من تناول الوجبات المحضرة خارج المنزل.';echo '<br>'; echo'
+Minimize eating meals prepared outside the home.';echo '<br>'; echo'
 
-يفضل شرب الحليب ومنتجاته قليلة الدسم.';echo '<br>'; echo'
+It is preferable to drink milk and its low-fat products.';echo '<br>'; echo'
 
-يفضل الإكثار من تناول السمك والدجاج أما اللحوم الحمراء فيكون بشكل معتدل.';echo '<br>'; echo'
+It is preferable to eat more fish and chicken, but red meat should be in moderation.';echo '<br>'; echo'
 
-الإكثار من تناول الفواكه والخضراوات والبقوليات الغنية بالألياف.';echo '<br>'; echo'
+Increase the intake of fruits, vegetables and legumes rich in fiber.';echo '<br>'; echo'
 
-مزاولة الرياضة بشكل منتظم. ';}
+Doing sports regularly. ';}
 ?> 
 
 <?php if ($bmi >=25 && $bmi <30) {echo 'You are slightly overweight please follow a healthy diet and exercise as much as possible';}

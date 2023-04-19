@@ -103,9 +103,9 @@ margin-left: 8px;" ><a href="indexen.php">English</a></li>
 	<div class="tryy">
 	<label class="labeloption">الاعاقة</label>
    <select style="height: 27px;color: #5f79ca;" name="disability" class="options"  class="arrtol">
-    <option value="downSyndrome">سمعية</option>
-    <option value="deaf">بصرية</option>
-	  <option value="deaf">حركية</option>
+    <option value="deafness">سمعية</option>
+    <option value="visual">بصرية</option>
+	  <option value="mobility">حركية</option>
   </select>
 	</div>
 			

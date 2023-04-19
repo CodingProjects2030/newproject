@@ -138,7 +138,15 @@ while($row = mysqli_fetch_assoc($result)) { ?>
 <?php 
 echo ' <tr>
     <td>'; echo $row["question"];echo ' </td>
-    <td>'; echo $row["answer"]; echo'</td>';
+    <td>'; 
+	if ($row["answer"]=='لم تتم الاجابة بعد')
+	{echo'Not answered yet';}
+
+else{echo $row["answer"];}
+	
+	
+	
+	 echo'</td>';
 	
 	if ($row["answer"]=='لم تتم الاجابة بعد')
 	{echo'
